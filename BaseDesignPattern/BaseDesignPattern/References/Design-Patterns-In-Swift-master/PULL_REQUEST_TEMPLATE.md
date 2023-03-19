@@ -1,0 +1,3 @@
+- [ ] Read [CONTRIBUTING.md]](https://github.com/ochococo/Design-Patterns-In-Swift/blob/master/CONTRIBUTING.md])
+- [ ] Added description
+- [ ] Linked to and/or created issue

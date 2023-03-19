@@ -14,7 +14,10 @@
 		2309275729AB864500059B0C /* BaseDesignPatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309275629AB864500059B0C /* BaseDesignPatternTests.swift */; };
 		2309276129AB864500059B0C /* BaseDesignPatternUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309276029AB864500059B0C /* BaseDesignPatternUITests.swift */; };
 		2309276329AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309276229AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift */; };
+		E829811C2E42C84746E0D038 /* References in Resources */ = {isa = PBXBuildFile; fileRef = E829836C0DC17DBC43F087C7 /* References */; };
 		E8298899BC2F85EE75307F1D /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82982CEA7514339799C94CE /* Base.swift */; };
+		E8298A287E711DBA79B1F87F /* CreativeDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8298FE814F2F9DAFDDD9A9D /* CreativeDesign.swift */; };
+		E8298C2F6BC409C3071440B3 /* StructuralDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = E829825D48BCB0C8EF2FC6B5 /* StructuralDesign.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +48,10 @@
 		2309275C29AB864500059B0C /* BaseDesignPatternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseDesignPatternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2309276029AB864500059B0C /* BaseDesignPatternUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDesignPatternUITests.swift; sourceTree = "<group>"; };
 		2309276229AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDesignPatternUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E829825D48BCB0C8EF2FC6B5 /* StructuralDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralDesign.swift; sourceTree = "<group>"; };
 		E82982CEA7514339799C94CE /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		E829836C0DC17DBC43F087C7 /* References */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = References; sourceTree = "<group>"; };
+		E8298FE814F2F9DAFDDD9A9D /* CreativeDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreativeDesign.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 				2309274929AB864400059B0C /* Assets.xcassets */,
 				2309274B29AB864400059B0C /* Preview Content */,
 				E82987847A0DCDC408E37B04 /* Base */,
+				E82983AAB9CF3662F3C50C97 /* DesignPattern */,
+				E829836C0DC17DBC43F087C7 /* References */,
 			);
 			path = BaseDesignPattern;
 			sourceTree = "<group>";
@@ -128,6 +136,15 @@
 				2309276229AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift */,
 			);
 			path = BaseDesignPatternUITests;
+			sourceTree = "<group>";
+		};
+		E82983AAB9CF3662F3C50C97 /* DesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+				E8298FE814F2F9DAFDDD9A9D /* CreativeDesign.swift */,
+				E829825D48BCB0C8EF2FC6B5 /* StructuralDesign.swift */,
+			);
+			path = DesignPattern;
 			sourceTree = "<group>";
 		};
 		E82987847A0DCDC408E37B04 /* Base */ = {
@@ -244,6 +261,7 @@
 			files = (
 				2309274D29AB864400059B0C /* Preview Assets.xcassets in Resources */,
 				2309274A29AB864400059B0C /* Assets.xcassets in Resources */,
+				E829811C2E42C84746E0D038 /* References in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +289,8 @@
 				2309274829AB864300059B0C /* ContentView.swift in Sources */,
 				2309274629AB864300059B0C /* BaseDesignPatternApp.swift in Sources */,
 				E8298899BC2F85EE75307F1D /* Base.swift in Sources */,
+				E8298A287E711DBA79B1F87F /* CreativeDesign.swift in Sources */,
+				E8298C2F6BC409C3071440B3 /* StructuralDesign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
