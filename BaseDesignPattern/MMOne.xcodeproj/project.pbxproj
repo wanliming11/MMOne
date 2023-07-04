@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2309274629AB864300059B0C /* BaseDesignPatternApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309274529AB864300059B0C /* BaseDesignPatternApp.swift */; };
+		2309274629AB864300059B0C /* MMOneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309274529AB864300059B0C /* MMOneApp.swift */; };
 		2309274829AB864300059B0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309274729AB864300059B0C /* ContentView.swift */; };
 		2309274A29AB864400059B0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2309274929AB864400059B0C /* Assets.xcassets */; };
 		2309274D29AB864400059B0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2309274C29AB864400059B0C /* Preview Assets.xcassets */; };
@@ -38,14 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2309274229AB864300059B0C /* BaseDesignPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseDesignPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2309274529AB864300059B0C /* BaseDesignPatternApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDesignPatternApp.swift; sourceTree = "<group>"; };
+		2309274229AB864300059B0C /* MMOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2309274529AB864300059B0C /* MMOneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMOneApp.swift; sourceTree = "<group>"; };
 		2309274729AB864300059B0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2309274929AB864400059B0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2309274C29AB864400059B0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2309275229AB864500059B0C /* BaseDesignPatternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseDesignPatternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2309275229AB864500059B0C /* MMOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2309275629AB864500059B0C /* BaseDesignPatternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDesignPatternTests.swift; sourceTree = "<group>"; };
-		2309275C29AB864500059B0C /* BaseDesignPatternUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseDesignPatternUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2309275C29AB864500059B0C /* MMOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2309276029AB864500059B0C /* BaseDesignPatternUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDesignPatternUITests.swift; sourceTree = "<group>"; };
 		2309276229AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDesignPatternUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E829825D48BCB0C8EF2FC6B5 /* StructuralDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralDesign.swift; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 		2309273929AB864300059B0C = {
 			isa = PBXGroup;
 			children = (
-				2309274429AB864300059B0C /* BaseDesignPattern */,
+				2309274429AB864300059B0C /* MMOne */,
 				2309275529AB864500059B0C /* BaseDesignPatternTests */,
 				2309275F29AB864500059B0C /* BaseDesignPatternUITests */,
 				2309274329AB864300059B0C /* Products */,
@@ -92,25 +92,25 @@
 		2309274329AB864300059B0C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2309274229AB864300059B0C /* BaseDesignPattern.app */,
-				2309275229AB864500059B0C /* BaseDesignPatternTests.xctest */,
-				2309275C29AB864500059B0C /* BaseDesignPatternUITests.xctest */,
+				2309274229AB864300059B0C /* MMOne.app */,
+				2309275229AB864500059B0C /* MMOneTests.xctest */,
+				2309275C29AB864500059B0C /* MMOneUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2309274429AB864300059B0C /* BaseDesignPattern */ = {
+		2309274429AB864300059B0C /* MMOne */ = {
 			isa = PBXGroup;
 			children = (
-				2309274529AB864300059B0C /* BaseDesignPatternApp.swift */,
+				4ECBF1F82A53AF0100DEA60A /* Features */,
+				4ECBF1F72A53AEFA00DEA60A /* Tick */,
+				2309274529AB864300059B0C /* MMOneApp.swift */,
 				2309274729AB864300059B0C /* ContentView.swift */,
 				2309274929AB864400059B0C /* Assets.xcassets */,
 				2309274B29AB864400059B0C /* Preview Content */,
-				E82987847A0DCDC408E37B04 /* Base */,
-				E82983AAB9CF3662F3C50C97 /* DesignPattern */,
 				E829836C0DC17DBC43F087C7 /* References */,
 			);
-			path = BaseDesignPattern;
+			path = MMOne;
 			sourceTree = "<group>";
 		};
 		2309274B29AB864400059B0C /* Preview Content */ = {
@@ -138,29 +138,37 @@
 			path = BaseDesignPatternUITests;
 			sourceTree = "<group>";
 		};
-		E82983AAB9CF3662F3C50C97 /* DesignPattern */ = {
+		4ECBF1F72A53AEFA00DEA60A /* Tick */ = {
 			isa = PBXGroup;
 			children = (
-				E8298FE814F2F9DAFDDD9A9D /* CreativeDesign.swift */,
-				E829825D48BCB0C8EF2FC6B5 /* StructuralDesign.swift */,
+				4ECBF1F92A53AF1E00DEA60A /* Design */,
 			);
-			path = DesignPattern;
+			path = Tick;
 			sourceTree = "<group>";
 		};
-		E82987847A0DCDC408E37B04 /* Base */ = {
+		4ECBF1F82A53AF0100DEA60A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		4ECBF1F92A53AF1E00DEA60A /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				E829825D48BCB0C8EF2FC6B5 /* StructuralDesign.swift */,
+				E8298FE814F2F9DAFDDD9A9D /* CreativeDesign.swift */,
 				E82982CEA7514339799C94CE /* Base.swift */,
 			);
-			path = Base;
+			path = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2309274129AB864300059B0C /* BaseDesignPattern */ = {
+		2309274129AB864300059B0C /* MMOne */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2309276629AB864500059B0C /* Build configuration list for PBXNativeTarget "BaseDesignPattern" */;
+			buildConfigurationList = 2309276629AB864500059B0C /* Build configuration list for PBXNativeTarget "MMOne" */;
 			buildPhases = (
 				2309273E29AB864300059B0C /* Sources */,
 				2309273F29AB864300059B0C /* Frameworks */,
@@ -170,14 +178,14 @@
 			);
 			dependencies = (
 			);
-			name = BaseDesignPattern;
+			name = MMOne;
 			productName = BaseDesignPattern;
-			productReference = 2309274229AB864300059B0C /* BaseDesignPattern.app */;
+			productReference = 2309274229AB864300059B0C /* MMOne.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2309275129AB864500059B0C /* BaseDesignPatternTests */ = {
+		2309275129AB864500059B0C /* MMOneTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2309276929AB864500059B0C /* Build configuration list for PBXNativeTarget "BaseDesignPatternTests" */;
+			buildConfigurationList = 2309276929AB864500059B0C /* Build configuration list for PBXNativeTarget "MMOneTests" */;
 			buildPhases = (
 				2309274E29AB864500059B0C /* Sources */,
 				2309274F29AB864500059B0C /* Frameworks */,
@@ -188,14 +196,14 @@
 			dependencies = (
 				2309275429AB864500059B0C /* PBXTargetDependency */,
 			);
-			name = BaseDesignPatternTests;
+			name = MMOneTests;
 			productName = BaseDesignPatternTests;
-			productReference = 2309275229AB864500059B0C /* BaseDesignPatternTests.xctest */;
+			productReference = 2309275229AB864500059B0C /* MMOneTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2309275B29AB864500059B0C /* BaseDesignPatternUITests */ = {
+		2309275B29AB864500059B0C /* MMOneUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2309276C29AB864500059B0C /* Build configuration list for PBXNativeTarget "BaseDesignPatternUITests" */;
+			buildConfigurationList = 2309276C29AB864500059B0C /* Build configuration list for PBXNativeTarget "MMOneUITests" */;
 			buildPhases = (
 				2309275829AB864500059B0C /* Sources */,
 				2309275929AB864500059B0C /* Frameworks */,
@@ -206,9 +214,9 @@
 			dependencies = (
 				2309275E29AB864500059B0C /* PBXTargetDependency */,
 			);
-			name = BaseDesignPatternUITests;
+			name = MMOneUITests;
 			productName = BaseDesignPatternUITests;
-			productReference = 2309275C29AB864500059B0C /* BaseDesignPatternUITests.xctest */;
+			productReference = 2309275C29AB864500059B0C /* MMOneUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -234,7 +242,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2309273D29AB864300059B0C /* Build configuration list for PBXProject "BaseDesignPattern" */;
+			buildConfigurationList = 2309273D29AB864300059B0C /* Build configuration list for PBXProject "MMOne" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -247,9 +255,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2309274129AB864300059B0C /* BaseDesignPattern */,
-				2309275129AB864500059B0C /* BaseDesignPatternTests */,
-				2309275B29AB864500059B0C /* BaseDesignPatternUITests */,
+				2309274129AB864300059B0C /* MMOne */,
+				2309275129AB864500059B0C /* MMOneTests */,
+				2309275B29AB864500059B0C /* MMOneUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,7 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2309274829AB864300059B0C /* ContentView.swift in Sources */,
-				2309274629AB864300059B0C /* BaseDesignPatternApp.swift in Sources */,
+				2309274629AB864300059B0C /* MMOneApp.swift in Sources */,
 				E8298899BC2F85EE75307F1D /* Base.swift in Sources */,
 				E8298A287E711DBA79B1F87F /* CreativeDesign.swift in Sources */,
 				E8298C2F6BC409C3071440B3 /* StructuralDesign.swift in Sources */,
@@ -316,12 +324,12 @@
 /* Begin PBXTargetDependency section */
 		2309275429AB864500059B0C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2309274129AB864300059B0C /* BaseDesignPattern */;
+			target = 2309274129AB864300059B0C /* MMOne */;
 			targetProxy = 2309275329AB864500059B0C /* PBXContainerItemProxy */;
 		};
 		2309275E29AB864500059B0C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2309274129AB864300059B0C /* BaseDesignPattern */;
+			target = 2309274129AB864300059B0C /* MMOne */;
 			targetProxy = 2309275D29AB864500059B0C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -448,7 +456,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BaseDesignPattern/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MMOne/Preview Content\"";
 				DEVELOPMENT_TEAM = KWNMNWEFB6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -462,7 +470,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wlm.mobile.BaseDesignPattern;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wlm.mobile.MMOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -477,7 +485,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BaseDesignPattern/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MMOne/Preview Content\"";
 				DEVELOPMENT_TEAM = KWNMNWEFB6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -491,7 +499,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.wlm.mobile.BaseDesignPattern;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wlm.mobile.MMOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -515,7 +523,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaseDesignPattern.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BaseDesignPattern";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MMOne.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MMOne";
 			};
 			name = Debug;
 		};
@@ -535,7 +543,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaseDesignPattern.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BaseDesignPattern";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MMOne.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MMOne";
 			};
 			name = Release;
 		};
@@ -578,7 +586,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2309273D29AB864300059B0C /* Build configuration list for PBXProject "BaseDesignPattern" */ = {
+		2309273D29AB864300059B0C /* Build configuration list for PBXProject "MMOne" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2309276429AB864500059B0C /* Debug */,
@@ -587,7 +595,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2309276629AB864500059B0C /* Build configuration list for PBXNativeTarget "BaseDesignPattern" */ = {
+		2309276629AB864500059B0C /* Build configuration list for PBXNativeTarget "MMOne" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2309276729AB864500059B0C /* Debug */,
@@ -596,7 +604,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2309276929AB864500059B0C /* Build configuration list for PBXNativeTarget "BaseDesignPatternTests" */ = {
+		2309276929AB864500059B0C /* Build configuration list for PBXNativeTarget "MMOneTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2309276A29AB864500059B0C /* Debug */,
@@ -605,7 +613,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2309276C29AB864500059B0C /* Build configuration list for PBXNativeTarget "BaseDesignPatternUITests" */ = {
+		2309276C29AB864500059B0C /* Build configuration list for PBXNativeTarget "MMOneUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2309276D29AB864500059B0C /* Debug */,
