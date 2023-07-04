@@ -14,6 +14,40 @@
 		2309275729AB864500059B0C /* BaseDesignPatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309275629AB864500059B0C /* BaseDesignPatternTests.swift */; };
 		2309276129AB864500059B0C /* BaseDesignPatternUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309276029AB864500059B0C /* BaseDesignPatternUITests.swift */; };
 		2309276329AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309276229AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift */; };
+		4ECB0D892A54473900DEA60A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4ECB0D882A54473900DEA60A /* Kingfisher */; };
+		4ECB0D8C2A54485E00DEA60A /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 4ECB0D8B2A54485E00DEA60A /* SwiftUIX */; };
+		4ECB0D8F2A54491F00DEA60A /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 4ECB0D8E2A54491F00DEA60A /* Swinject */; };
+		4ECBF1FC2A53B02900DEA60A /* Swift5_8_features.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF1FB2A53B02900DEA60A /* Swift5_8_features.swift */; };
+		4ECBF2032A53B1A300DEA60A /* MultiColumns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF1FF2A53B1A300DEA60A /* MultiColumns.swift */; };
+		4ECBF2042A53B1A300DEA60A /* HLSPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF2012A53B1A300DEA60A /* HLSPlayerView.swift */; };
+		4ECBF2052A53B1A300DEA60A /* RTMPPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF2022A53B1A300DEA60A /* RTMPPlayerView.swift */; };
+		4ECBF22F2A53B1AE00DEA60A /* TextRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF2082A53B1AE00DEA60A /* TextRoomView.swift */; };
+		4ECBF2302A53B1AE00DEA60A /* LiveRoomInputBoxServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF20C2A53B1AE00DEA60A /* LiveRoomInputBoxServiceProtocol.swift */; };
+		4ECBF2312A53B1AE00DEA60A /* LiveRoomInputBoxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF20D2A53B1AE00DEA60A /* LiveRoomInputBoxController.swift */; };
+		4ECBF2322A53B1AE00DEA60A /* LiveRoomDanmuBoxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF20F2A53B1AE00DEA60A /* LiveRoomDanmuBoxController.swift */; };
+		4ECBF2332A53B1AE00DEA60A /* LiveRoomDanmuBoxServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF2102A53B1AE00DEA60A /* LiveRoomDanmuBoxServiceProtocol.swift */; };
+		4ECBF2342A53B1AE00DEA60A /* LiveRoomDelegatePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF2122A53B1AE00DEA60A /* LiveRoomDelegatePublisher.swift */; };
+		4ECBF2352A53B1AE00DEA60A /* LiveRoomBoxes.json in Resources */ = {isa = PBXBuildFile; fileRef = 4ECBF2132A53B1AE00DEA60A /* LiveRoomBoxes.json */; };
+		4ECBF2362A53B1AE00DEA60A /* LiveRoomDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF2142A53B1AE00DEA60A /* LiveRoomDelegate.swift */; };
+		4ECBF2372A53B1AE00DEA60A /* LiveRoomRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF2152A53B1AE00DEA60A /* LiveRoomRegister.swift */; };
+		4ECBF2382A53B1AE00DEA60A /* LiveRoomLayoutDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF2162A53B1AE00DEA60A /* LiveRoomLayoutDescriptor.swift */; };
+		4ECBF2392A53B1AE00DEA60A /* LiveRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF2172A53B1AE00DEA60A /* LiveRoomView.swift */; };
+		4ECBF23A2A53B1AE00DEA60A /* LiveRoomBaseUIBoxController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF21A2A53B1AE00DEA60A /* LiveRoomBaseUIBoxController.swift */; };
+		4ECBF23B2A53B1AE00DEA60A /* LiveRoomUIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF21B2A53B1AE00DEA60A /* LiveRoomUIServiceProtocol.swift */; };
+		4ECBF23C2A53B1AE00DEA60A /* LiveScrollContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF21C2A53B1AE00DEA60A /* LiveScrollContainer.swift */; };
+		4ECBF23D2A53B1AE00DEA60A /* AppDeleagateDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF21E2A53B1AE00DEA60A /* AppDeleagateDispatcher.swift */; };
+		4ECBF23E2A53B1AE00DEA60A /* MVPDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF21F2A53B1AE00DEA60A /* MVPDelegate.swift */; };
+		4ECBF23F2A53B1AE00DEA60A /* HomeAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF2212A53B1AE00DEA60A /* HomeAppDelegate.swift */; };
+		4ECBF2402A53B1AE00DEA60A /* ADAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF2222A53B1AE00DEA60A /* ADAppDelegate.swift */; };
+		4ECBF2412A53B1AE00DEA60A /* HomeVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF2262A53B1AE00DEA60A /* HomeVideoCell.swift */; };
+		4ECBF2422A53B1AE00DEA60A /* HomeNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF2272A53B1AE00DEA60A /* HomeNormalCell.swift */; };
+		4ECBF2432A53B1AE00DEA60A /* HomeCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF2282A53B1AE00DEA60A /* HomeCellView.swift */; };
+		4ECBF2442A53B1AE00DEA60A /* HomeBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF2292A53B1AE00DEA60A /* HomeBannerCell.swift */; };
+		4ECBF2452A53B1AE00DEA60A /* HomeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF22A2A53B1AE00DEA60A /* HomeContentView.swift */; };
+		4ECBF2462A53B1AE00DEA60A /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF22B2A53B1AE00DEA60A /* HomeTabView.swift */; };
+		4ECBF2472A53B1AE00DEA60A /* HomeHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF22C2A53B1AE00DEA60A /* HomeHeadView.swift */; };
+		4ECBF2482A53B1AE00DEA60A /* LoadingDataFromFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF22D2A53B1AE00DEA60A /* LoadingDataFromFile.swift */; };
+		4ECBF2492A53B1AE00DEA60A /* TimeWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF22E2A53B1AE00DEA60A /* TimeWindow.swift */; };
 		E829811C2E42C84746E0D038 /* References in Resources */ = {isa = PBXBuildFile; fileRef = E829836C0DC17DBC43F087C7 /* References */; };
 		E8298899BC2F85EE75307F1D /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82982CEA7514339799C94CE /* Base.swift */; };
 		E8298A287E711DBA79B1F87F /* CreativeDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8298FE814F2F9DAFDDD9A9D /* CreativeDesign.swift */; };
@@ -48,6 +82,37 @@
 		2309275C29AB864500059B0C /* MMOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2309276029AB864500059B0C /* BaseDesignPatternUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDesignPatternUITests.swift; sourceTree = "<group>"; };
 		2309276229AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDesignPatternUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4ECBF1FB2A53B02900DEA60A /* Swift5_8_features.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift5_8_features.swift; sourceTree = "<group>"; };
+		4ECBF1FF2A53B1A300DEA60A /* MultiColumns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiColumns.swift; sourceTree = "<group>"; };
+		4ECBF2012A53B1A300DEA60A /* HLSPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLSPlayerView.swift; sourceTree = "<group>"; };
+		4ECBF2022A53B1A300DEA60A /* RTMPPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RTMPPlayerView.swift; sourceTree = "<group>"; };
+		4ECBF2082A53B1AE00DEA60A /* TextRoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextRoomView.swift; sourceTree = "<group>"; };
+		4ECBF20C2A53B1AE00DEA60A /* LiveRoomInputBoxServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveRoomInputBoxServiceProtocol.swift; sourceTree = "<group>"; };
+		4ECBF20D2A53B1AE00DEA60A /* LiveRoomInputBoxController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveRoomInputBoxController.swift; sourceTree = "<group>"; };
+		4ECBF20F2A53B1AE00DEA60A /* LiveRoomDanmuBoxController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveRoomDanmuBoxController.swift; sourceTree = "<group>"; };
+		4ECBF2102A53B1AE00DEA60A /* LiveRoomDanmuBoxServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveRoomDanmuBoxServiceProtocol.swift; sourceTree = "<group>"; };
+		4ECBF2122A53B1AE00DEA60A /* LiveRoomDelegatePublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveRoomDelegatePublisher.swift; sourceTree = "<group>"; };
+		4ECBF2132A53B1AE00DEA60A /* LiveRoomBoxes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LiveRoomBoxes.json; sourceTree = "<group>"; };
+		4ECBF2142A53B1AE00DEA60A /* LiveRoomDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveRoomDelegate.swift; sourceTree = "<group>"; };
+		4ECBF2152A53B1AE00DEA60A /* LiveRoomRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveRoomRegister.swift; sourceTree = "<group>"; };
+		4ECBF2162A53B1AE00DEA60A /* LiveRoomLayoutDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveRoomLayoutDescriptor.swift; sourceTree = "<group>"; };
+		4ECBF2172A53B1AE00DEA60A /* LiveRoomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveRoomView.swift; sourceTree = "<group>"; };
+		4ECBF21A2A53B1AE00DEA60A /* LiveRoomBaseUIBoxController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveRoomBaseUIBoxController.swift; sourceTree = "<group>"; };
+		4ECBF21B2A53B1AE00DEA60A /* LiveRoomUIServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveRoomUIServiceProtocol.swift; sourceTree = "<group>"; };
+		4ECBF21C2A53B1AE00DEA60A /* LiveScrollContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveScrollContainer.swift; sourceTree = "<group>"; };
+		4ECBF21E2A53B1AE00DEA60A /* AppDeleagateDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDeleagateDispatcher.swift; sourceTree = "<group>"; };
+		4ECBF21F2A53B1AE00DEA60A /* MVPDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVPDelegate.swift; sourceTree = "<group>"; };
+		4ECBF2212A53B1AE00DEA60A /* HomeAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeAppDelegate.swift; sourceTree = "<group>"; };
+		4ECBF2222A53B1AE00DEA60A /* ADAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADAppDelegate.swift; sourceTree = "<group>"; };
+		4ECBF2262A53B1AE00DEA60A /* HomeVideoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVideoCell.swift; sourceTree = "<group>"; };
+		4ECBF2272A53B1AE00DEA60A /* HomeNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeNormalCell.swift; sourceTree = "<group>"; };
+		4ECBF2282A53B1AE00DEA60A /* HomeCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCellView.swift; sourceTree = "<group>"; };
+		4ECBF2292A53B1AE00DEA60A /* HomeBannerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeBannerCell.swift; sourceTree = "<group>"; };
+		4ECBF22A2A53B1AE00DEA60A /* HomeContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeContentView.swift; sourceTree = "<group>"; };
+		4ECBF22B2A53B1AE00DEA60A /* HomeTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		4ECBF22C2A53B1AE00DEA60A /* HomeHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeadView.swift; sourceTree = "<group>"; };
+		4ECBF22D2A53B1AE00DEA60A /* LoadingDataFromFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingDataFromFile.swift; sourceTree = "<group>"; };
+		4ECBF22E2A53B1AE00DEA60A /* TimeWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeWindow.swift; sourceTree = "<group>"; };
 		E829825D48BCB0C8EF2FC6B5 /* StructuralDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralDesign.swift; sourceTree = "<group>"; };
 		E82982CEA7514339799C94CE /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		E829836C0DC17DBC43F087C7 /* References */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = References; sourceTree = "<group>"; };
@@ -59,6 +124,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ECB0D892A54473900DEA60A /* Kingfisher in Frameworks */,
+				4ECB0D8C2A54485E00DEA60A /* SwiftUIX in Frameworks */,
+				4ECB0D8F2A54491F00DEA60A /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +209,9 @@
 		4ECBF1F72A53AEFA00DEA60A /* Tick */ = {
 			isa = PBXGroup;
 			children = (
+				4ECBF1FE2A53B1A300DEA60A /* MacOSMultiColumns */,
+				4ECBF2002A53B1A300DEA60A /* Tools */,
+				4ECBF1FA2A53AFFF00DEA60A /* Lang */,
 				4ECBF1F92A53AF1E00DEA60A /* Design */,
 			);
 			path = Tick;
@@ -149,6 +220,7 @@
 		4ECBF1F82A53AF0100DEA60A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				4ECBF1FD2A53B0FF00DEA60A /* Old */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -161,6 +233,177 @@
 				E82982CEA7514339799C94CE /* Base.swift */,
 			);
 			path = Design;
+			sourceTree = "<group>";
+		};
+		4ECBF1FA2A53AFFF00DEA60A /* Lang */ = {
+			isa = PBXGroup;
+			children = (
+				4ECBF1FB2A53B02900DEA60A /* Swift5_8_features.swift */,
+			);
+			path = Lang;
+			sourceTree = "<group>";
+		};
+		4ECBF1FD2A53B0FF00DEA60A /* Old */ = {
+			isa = PBXGroup;
+			children = (
+				4ECBF21D2A53B1AE00DEA60A /* Appdelegate dispatch */,
+				4ECBF2232A53B1AE00DEA60A /* Home */,
+				4ECBF2062A53B1AE00DEA60A /* LiveStreamingInWeakNetwork */,
+				4ECBF22D2A53B1AE00DEA60A /* LoadingDataFromFile.swift */,
+				4ECBF22E2A53B1AE00DEA60A /* TimeWindow.swift */,
+			);
+			path = Old;
+			sourceTree = "<group>";
+		};
+		4ECBF1FE2A53B1A300DEA60A /* MacOSMultiColumns */ = {
+			isa = PBXGroup;
+			children = (
+				4ECBF1FF2A53B1A300DEA60A /* MultiColumns.swift */,
+			);
+			path = MacOSMultiColumns;
+			sourceTree = "<group>";
+		};
+		4ECBF2002A53B1A300DEA60A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				4ECBF2012A53B1A300DEA60A /* HLSPlayerView.swift */,
+				4ECBF2022A53B1A300DEA60A /* RTMPPlayerView.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		4ECBF2062A53B1AE00DEA60A /* LiveStreamingInWeakNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				4ECBF2072A53B1AE00DEA60A /* TextRoomView */,
+				4ECBF2092A53B1AE00DEA60A /* LiveRoom */,
+				4ECBF21C2A53B1AE00DEA60A /* LiveScrollContainer.swift */,
+			);
+			path = LiveStreamingInWeakNetwork;
+			sourceTree = "<group>";
+		};
+		4ECBF2072A53B1AE00DEA60A /* TextRoomView */ = {
+			isa = PBXGroup;
+			children = (
+				4ECBF2082A53B1AE00DEA60A /* TextRoomView.swift */,
+			);
+			path = TextRoomView;
+			sourceTree = "<group>";
+		};
+		4ECBF2092A53B1AE00DEA60A /* LiveRoom */ = {
+			isa = PBXGroup;
+			children = (
+				4ECBF20A2A53B1AE00DEA60A /* BusinessBoxes */,
+				4ECBF2112A53B1AE00DEA60A /* Container */,
+				4ECBF2162A53B1AE00DEA60A /* LiveRoomLayoutDescriptor.swift */,
+				4ECBF2172A53B1AE00DEA60A /* LiveRoomView.swift */,
+				4ECBF2182A53B1AE00DEA60A /* BaseBoxes */,
+			);
+			path = LiveRoom;
+			sourceTree = "<group>";
+		};
+		4ECBF20A2A53B1AE00DEA60A /* BusinessBoxes */ = {
+			isa = PBXGroup;
+			children = (
+				4ECBF20B2A53B1AE00DEA60A /* LiveRoomInputBoxController */,
+				4ECBF20E2A53B1AE00DEA60A /* DanmuBusinessBox */,
+			);
+			path = BusinessBoxes;
+			sourceTree = "<group>";
+		};
+		4ECBF20B2A53B1AE00DEA60A /* LiveRoomInputBoxController */ = {
+			isa = PBXGroup;
+			children = (
+				4ECBF20C2A53B1AE00DEA60A /* LiveRoomInputBoxServiceProtocol.swift */,
+				4ECBF20D2A53B1AE00DEA60A /* LiveRoomInputBoxController.swift */,
+			);
+			path = LiveRoomInputBoxController;
+			sourceTree = "<group>";
+		};
+		4ECBF20E2A53B1AE00DEA60A /* DanmuBusinessBox */ = {
+			isa = PBXGroup;
+			children = (
+				4ECBF20F2A53B1AE00DEA60A /* LiveRoomDanmuBoxController.swift */,
+				4ECBF2102A53B1AE00DEA60A /* LiveRoomDanmuBoxServiceProtocol.swift */,
+			);
+			path = DanmuBusinessBox;
+			sourceTree = "<group>";
+		};
+		4ECBF2112A53B1AE00DEA60A /* Container */ = {
+			isa = PBXGroup;
+			children = (
+				4ECBF2122A53B1AE00DEA60A /* LiveRoomDelegatePublisher.swift */,
+				4ECBF2132A53B1AE00DEA60A /* LiveRoomBoxes.json */,
+				4ECBF2142A53B1AE00DEA60A /* LiveRoomDelegate.swift */,
+				4ECBF2152A53B1AE00DEA60A /* LiveRoomRegister.swift */,
+			);
+			path = Container;
+			sourceTree = "<group>";
+		};
+		4ECBF2182A53B1AE00DEA60A /* BaseBoxes */ = {
+			isa = PBXGroup;
+			children = (
+				4ECBF2192A53B1AE00DEA60A /* BaseUIBox */,
+			);
+			path = BaseBoxes;
+			sourceTree = "<group>";
+		};
+		4ECBF2192A53B1AE00DEA60A /* BaseUIBox */ = {
+			isa = PBXGroup;
+			children = (
+				4ECBF21A2A53B1AE00DEA60A /* LiveRoomBaseUIBoxController.swift */,
+				4ECBF21B2A53B1AE00DEA60A /* LiveRoomUIServiceProtocol.swift */,
+			);
+			path = BaseUIBox;
+			sourceTree = "<group>";
+		};
+		4ECBF21D2A53B1AE00DEA60A /* Appdelegate dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				4ECBF21E2A53B1AE00DEA60A /* AppDeleagateDispatcher.swift */,
+				4ECBF21F2A53B1AE00DEA60A /* MVPDelegate.swift */,
+				4ECBF2202A53B1AE00DEA60A /* Modules */,
+			);
+			path = "Appdelegate dispatch";
+			sourceTree = "<group>";
+		};
+		4ECBF2202A53B1AE00DEA60A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				4ECBF2212A53B1AE00DEA60A /* HomeAppDelegate.swift */,
+				4ECBF2222A53B1AE00DEA60A /* ADAppDelegate.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		4ECBF2232A53B1AE00DEA60A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4ECBF2242A53B1AE00DEA60A /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4ECBF2242A53B1AE00DEA60A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4ECBF2252A53B1AE00DEA60A /* ReusableTabView */,
+				4ECBF22A2A53B1AE00DEA60A /* HomeContentView.swift */,
+				4ECBF22B2A53B1AE00DEA60A /* HomeTabView.swift */,
+				4ECBF22C2A53B1AE00DEA60A /* HomeHeadView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4ECBF2252A53B1AE00DEA60A /* ReusableTabView */ = {
+			isa = PBXGroup;
+			children = (
+				4ECBF2262A53B1AE00DEA60A /* HomeVideoCell.swift */,
+				4ECBF2272A53B1AE00DEA60A /* HomeNormalCell.swift */,
+				4ECBF2282A53B1AE00DEA60A /* HomeCellView.swift */,
+				4ECBF2292A53B1AE00DEA60A /* HomeBannerCell.swift */,
+			);
+			path = ReusableTabView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +422,11 @@
 			dependencies = (
 			);
 			name = MMOne;
+			packageProductDependencies = (
+				4ECB0D882A54473900DEA60A /* Kingfisher */,
+				4ECB0D8B2A54485E00DEA60A /* SwiftUIX */,
+				4ECB0D8E2A54491F00DEA60A /* Swinject */,
+			);
 			productName = BaseDesignPattern;
 			productReference = 2309274229AB864300059B0C /* MMOne.app */;
 			productType = "com.apple.product-type.application";
@@ -251,6 +499,11 @@
 				Base,
 			);
 			mainGroup = 2309273929AB864300059B0C;
+			packageReferences = (
+				4ECB0D872A54473900DEA60A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				4ECB0D8A2A54485E00DEA60A /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+				4ECB0D8D2A54491F00DEA60A /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 2309274329AB864300059B0C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -267,6 +520,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ECBF2352A53B1AE00DEA60A /* LiveRoomBoxes.json in Resources */,
 				2309274D29AB864400059B0C /* Preview Assets.xcassets in Resources */,
 				2309274A29AB864400059B0C /* Assets.xcassets in Resources */,
 				E829811C2E42C84746E0D038 /* References in Resources */,
@@ -294,11 +548,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ECBF23D2A53B1AE00DEA60A /* AppDeleagateDispatcher.swift in Sources */,
+				4ECBF23F2A53B1AE00DEA60A /* HomeAppDelegate.swift in Sources */,
+				4ECBF2332A53B1AE00DEA60A /* LiveRoomDanmuBoxServiceProtocol.swift in Sources */,
+				4ECBF2302A53B1AE00DEA60A /* LiveRoomInputBoxServiceProtocol.swift in Sources */,
+				4ECBF2342A53B1AE00DEA60A /* LiveRoomDelegatePublisher.swift in Sources */,
+				4ECBF2052A53B1A300DEA60A /* RTMPPlayerView.swift in Sources */,
+				4ECBF23B2A53B1AE00DEA60A /* LiveRoomUIServiceProtocol.swift in Sources */,
+				4ECBF2462A53B1AE00DEA60A /* HomeTabView.swift in Sources */,
+				4ECBF2492A53B1AE00DEA60A /* TimeWindow.swift in Sources */,
 				2309274829AB864300059B0C /* ContentView.swift in Sources */,
+				4ECBF1FC2A53B02900DEA60A /* Swift5_8_features.swift in Sources */,
+				4ECBF2392A53B1AE00DEA60A /* LiveRoomView.swift in Sources */,
 				2309274629AB864300059B0C /* MMOneApp.swift in Sources */,
+				4ECBF2382A53B1AE00DEA60A /* LiveRoomLayoutDescriptor.swift in Sources */,
 				E8298899BC2F85EE75307F1D /* Base.swift in Sources */,
+				4ECBF2312A53B1AE00DEA60A /* LiveRoomInputBoxController.swift in Sources */,
+				4ECBF2442A53B1AE00DEA60A /* HomeBannerCell.swift in Sources */,
+				4ECBF2412A53B1AE00DEA60A /* HomeVideoCell.swift in Sources */,
+				4ECBF2452A53B1AE00DEA60A /* HomeContentView.swift in Sources */,
+				4ECBF2362A53B1AE00DEA60A /* LiveRoomDelegate.swift in Sources */,
+				4ECBF2032A53B1A300DEA60A /* MultiColumns.swift in Sources */,
+				4ECBF23C2A53B1AE00DEA60A /* LiveScrollContainer.swift in Sources */,
+				4ECBF2472A53B1AE00DEA60A /* HomeHeadView.swift in Sources */,
+				4ECBF2042A53B1A300DEA60A /* HLSPlayerView.swift in Sources */,
+				4ECBF2322A53B1AE00DEA60A /* LiveRoomDanmuBoxController.swift in Sources */,
+				4ECBF23E2A53B1AE00DEA60A /* MVPDelegate.swift in Sources */,
 				E8298A287E711DBA79B1F87F /* CreativeDesign.swift in Sources */,
+				4ECBF2482A53B1AE00DEA60A /* LoadingDataFromFile.swift in Sources */,
+				4ECBF22F2A53B1AE00DEA60A /* TextRoomView.swift in Sources */,
+				4ECBF23A2A53B1AE00DEA60A /* LiveRoomBaseUIBoxController.swift in Sources */,
+				4ECBF2432A53B1AE00DEA60A /* HomeCellView.swift in Sources */,
+				4ECBF2372A53B1AE00DEA60A /* LiveRoomRegister.swift in Sources */,
+				4ECBF2422A53B1AE00DEA60A /* HomeNormalCell.swift in Sources */,
 				E8298C2F6BC409C3071440B3 /* StructuralDesign.swift in Sources */,
+				4ECBF2402A53B1AE00DEA60A /* ADAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +749,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -494,6 +779,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -623,6 +909,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4ECB0D872A54473900DEA60A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.8.1;
+			};
+		};
+		4ECB0D8A2A54485E00DEA60A /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.5;
+			};
+		};
+		4ECB0D8D2A54491F00DEA60A /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4ECB0D882A54473900DEA60A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4ECB0D872A54473900DEA60A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		4ECB0D8B2A54485E00DEA60A /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4ECB0D8A2A54485E00DEA60A /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+		4ECB0D8E2A54491F00DEA60A /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4ECB0D8D2A54491F00DEA60A /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2309273A29AB864300059B0C /* Project object */;
 }

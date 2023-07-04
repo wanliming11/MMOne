@@ -1,0 +1,16 @@
+{
+  "dependencies": [
+    {
+      "name": "LiveRoomUIBase",
+      "type": "UserService",
+      "factory": "init:",
+      "arguments": ["http://localhost/api/users"]
+    },
+    {
+      "name": "userViewController",
+      "type": "UserViewController",
+      "factory": "init:",
+      "arguments": ["userService"]
+    }
+  ]
+}
