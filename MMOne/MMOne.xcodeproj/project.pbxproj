@@ -14,6 +14,9 @@
 		2309275729AB864500059B0C /* BaseDesignPatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309275629AB864500059B0C /* BaseDesignPatternTests.swift */; };
 		2309276129AB864500059B0C /* BaseDesignPatternUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309276029AB864500059B0C /* BaseDesignPatternUITests.swift */; };
 		2309276329AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309276229AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift */; };
+		4EAD44392A54F9BA00E3FEBA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4EAD44382A54F9BA00E3FEBA /* README.md */; };
+		4EAD443C2A54FCF600E3FEBA /* SpriteFigureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAD443B2A54FCF600E3FEBA /* SpriteFigureView.swift */; };
+		4EAD443E2A54FD0D00E3FEBA /* SpriteFigureParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAD443D2A54FD0D00E3FEBA /* SpriteFigureParser.swift */; };
 		4ECB0D892A54473900DEA60A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4ECB0D882A54473900DEA60A /* Kingfisher */; };
 		4ECB0D8C2A54485E00DEA60A /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 4ECB0D8B2A54485E00DEA60A /* SwiftUIX */; };
 		4ECB0D8F2A54491F00DEA60A /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 4ECB0D8E2A54491F00DEA60A /* Swinject */; };
@@ -82,6 +85,9 @@
 		2309275C29AB864500059B0C /* MMOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2309276029AB864500059B0C /* BaseDesignPatternUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDesignPatternUITests.swift; sourceTree = "<group>"; };
 		2309276229AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDesignPatternUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4EAD44382A54F9BA00E3FEBA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4EAD443B2A54FCF600E3FEBA /* SpriteFigureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteFigureView.swift; sourceTree = "<group>"; };
+		4EAD443D2A54FD0D00E3FEBA /* SpriteFigureParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteFigureParser.swift; sourceTree = "<group>"; };
 		4ECBF1FB2A53B02900DEA60A /* Swift5_8_features.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift5_8_features.swift; sourceTree = "<group>"; };
 		4ECBF1FF2A53B1A300DEA60A /* MultiColumns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiColumns.swift; sourceTree = "<group>"; };
 		4ECBF2012A53B1A300DEA60A /* HLSPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLSPlayerView.swift; sourceTree = "<group>"; };
@@ -150,6 +156,7 @@
 		2309273929AB864300059B0C = {
 			isa = PBXGroup;
 			children = (
+				4EAD44382A54F9BA00E3FEBA /* README.md */,
 				2309274429AB864300059B0C /* MMOne */,
 				2309275529AB864500059B0C /* BaseDesignPatternTests */,
 				2309275F29AB864500059B0C /* BaseDesignPatternUITests */,
@@ -206,6 +213,15 @@
 			path = BaseDesignPatternUITests;
 			sourceTree = "<group>";
 		};
+		4EAD443A2A54FCB500E3FEBA /* 1. How to show a sprite figure? */ = {
+			isa = PBXGroup;
+			children = (
+				4EAD443B2A54FCF600E3FEBA /* SpriteFigureView.swift */,
+				4EAD443D2A54FD0D00E3FEBA /* SpriteFigureParser.swift */,
+			);
+			path = "1. How to show a sprite figure?";
+			sourceTree = "<group>";
+		};
 		4ECBF1F72A53AEFA00DEA60A /* Tick */ = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +236,7 @@
 		4ECBF1F82A53AF0100DEA60A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				4EAD443A2A54FCB500E3FEBA /* 1. How to show a sprite figure? */,
 				4ECBF1FD2A53B0FF00DEA60A /* Old */,
 			);
 			path = Features;
@@ -522,6 +539,7 @@
 			files = (
 				4ECBF2352A53B1AE00DEA60A /* LiveRoomBoxes.json in Resources */,
 				2309274D29AB864400059B0C /* Preview Assets.xcassets in Resources */,
+				4EAD44392A54F9BA00E3FEBA /* README.md in Resources */,
 				2309274A29AB864400059B0C /* Assets.xcassets in Resources */,
 				E829811C2E42C84746E0D038 /* References in Resources */,
 			);
@@ -553,6 +571,7 @@
 				4ECBF2332A53B1AE00DEA60A /* LiveRoomDanmuBoxServiceProtocol.swift in Sources */,
 				4ECBF2302A53B1AE00DEA60A /* LiveRoomInputBoxServiceProtocol.swift in Sources */,
 				4ECBF2342A53B1AE00DEA60A /* LiveRoomDelegatePublisher.swift in Sources */,
+				4EAD443C2A54FCF600E3FEBA /* SpriteFigureView.swift in Sources */,
 				4ECBF2052A53B1A300DEA60A /* RTMPPlayerView.swift in Sources */,
 				4ECBF23B2A53B1AE00DEA60A /* LiveRoomUIServiceProtocol.swift in Sources */,
 				4ECBF2462A53B1AE00DEA60A /* HomeTabView.swift in Sources */,
@@ -565,6 +584,7 @@
 				E8298899BC2F85EE75307F1D /* Base.swift in Sources */,
 				4ECBF2312A53B1AE00DEA60A /* LiveRoomInputBoxController.swift in Sources */,
 				4ECBF2442A53B1AE00DEA60A /* HomeBannerCell.swift in Sources */,
+				4EAD443E2A54FD0D00E3FEBA /* SpriteFigureParser.swift in Sources */,
 				4ECBF2412A53B1AE00DEA60A /* HomeVideoCell.swift in Sources */,
 				4ECBF2452A53B1AE00DEA60A /* HomeContentView.swift in Sources */,
 				4ECBF2362A53B1AE00DEA60A /* LiveRoomDelegate.swift in Sources */,
