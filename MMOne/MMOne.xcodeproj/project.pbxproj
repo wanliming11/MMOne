@@ -14,6 +14,7 @@
 		2309275729AB864500059B0C /* BaseDesignPatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309275629AB864500059B0C /* BaseDesignPatternTests.swift */; };
 		2309276129AB864500059B0C /* BaseDesignPatternUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309276029AB864500059B0C /* BaseDesignPatternUITests.swift */; };
 		2309276329AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309276229AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift */; };
+		4E88B8982A6430A500BFDB59 /* MVCCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E88B8972A6430A500BFDB59 /* MVCCode.swift */; };
 		4EAD44392A54F9BA00E3FEBA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4EAD44382A54F9BA00E3FEBA /* README.md */; };
 		4EAD443C2A54FCF600E3FEBA /* SpriteFigureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAD443B2A54FCF600E3FEBA /* SpriteFigureView.swift */; };
 		4EAD443E2A54FD0D00E3FEBA /* SpriteFigureParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAD443D2A54FD0D00E3FEBA /* SpriteFigureParser.swift */; };
@@ -85,6 +86,7 @@
 		2309275C29AB864500059B0C /* MMOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2309276029AB864500059B0C /* BaseDesignPatternUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDesignPatternUITests.swift; sourceTree = "<group>"; };
 		2309276229AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDesignPatternUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4E88B8972A6430A500BFDB59 /* MVCCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCCode.swift; sourceTree = "<group>"; };
 		4EAD44382A54F9BA00E3FEBA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4EAD443B2A54FCF600E3FEBA /* SpriteFigureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteFigureView.swift; sourceTree = "<group>"; };
 		4EAD443D2A54FD0D00E3FEBA /* SpriteFigureParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteFigureParser.swift; sourceTree = "<group>"; };
@@ -213,6 +215,14 @@
 			path = BaseDesignPatternUITests;
 			sourceTree = "<group>";
 		};
+		4E88B8962A642FB000BFDB59 /* 2. Compare the MVC, MVP, MVVM and VIPER pattern */ = {
+			isa = PBXGroup;
+			children = (
+				4E88B8972A6430A500BFDB59 /* MVCCode.swift */,
+			);
+			path = "2. Compare the MVC, MVP, MVVM and VIPER pattern";
+			sourceTree = "<group>";
+		};
 		4EAD443A2A54FCB500E3FEBA /* 1. How to show a sprite figure? */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,6 +246,7 @@
 		4ECBF1F82A53AF0100DEA60A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				4E88B8962A642FB000BFDB59 /* 2. Compare the MVC, MVP, MVVM and VIPER pattern */,
 				4EAD443A2A54FCB500E3FEBA /* 1. How to show a sprite figure? */,
 				4ECBF1FD2A53B0FF00DEA60A /* Old */,
 			);
@@ -595,6 +606,7 @@
 				4ECBF2322A53B1AE00DEA60A /* LiveRoomDanmuBoxController.swift in Sources */,
 				4ECBF23E2A53B1AE00DEA60A /* MVPDelegate.swift in Sources */,
 				E8298A287E711DBA79B1F87F /* CreativeDesign.swift in Sources */,
+				4E88B8982A6430A500BFDB59 /* MVCCode.swift in Sources */,
 				4ECBF2482A53B1AE00DEA60A /* LoadingDataFromFile.swift in Sources */,
 				4ECBF22F2A53B1AE00DEA60A /* TextRoomView.swift in Sources */,
 				4ECBF23A2A53B1AE00DEA60A /* LiveRoomBaseUIBoxController.swift in Sources */,

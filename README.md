@@ -22,7 +22,7 @@ MMOne is a project. This project wants to solve some small and complex problems,
 	3. 通话被抢占结束后恢复播放器的声音。
 	4. 非常规做法： 假保活机制（设置一个静音的视频），让系统误以为当前应用抢占了音频焦点，而不把应用 Kill 掉。 
 - 还有另外一种业务层的场景
-	1. 两个播放器存在的时候，一个静音，一个正常播放声音。 
+	1. 两个播放器存在的时候，一个静音，一个正常播放声音。
 - 常规的策略包括：
 	- AVAudioSessionCategory：
 		1. **`AVAudioSessionCategoryPlayback  最主流的，允许后台播放`，例如主播放器播放直播流的时候。**
@@ -33,6 +33,15 @@ MMOne is a project. This project wants to solve some small and complex problems,
 			1. 一般是同时需要音频录制和播放的场景，例如用户自己进行内容创作，一定会先录制后再进行播放，符合常规的业务
 	- 所有上面的策略设置，因为 AudioSession 是一个单例，都要考虑是否需要还原策略的场景，或者下一个业务场景需要使用的时候，重置下自己的策略，如果存在交叉场景，很容易出错。
 	- AVAudioSessionCategoryOptions 是一个掩码策略，用来满足在当前模式下的子定制化需求，类似于分组分支的小分支。
+ - [ ] Compare the MVC, MVP, MVVM and VIPER pattern.
+    - 这几种代码架构模式都是前端比较相关的几种代码结构
+    - MVC 反应的是 Model, View, Control 之间的扭转
+    - MVP 反应的是 Model，View， Present 之间的扭转
+    - MVVM 反应的是 Model，View，ViewModel 之间的扭转
+    - Viper 更细分一些， View，Interact，Present，Entity，Router
+    - 用代码来区分关于视图的展示，响应，网络与逻辑的操作，页面路由的操作， Model 的处理，每个业务场景放在哪里更合适。
+    
+
 
 
 
