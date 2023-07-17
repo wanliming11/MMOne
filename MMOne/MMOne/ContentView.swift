@@ -15,6 +15,7 @@ struct ContentView: View {
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
             SpriteFigureView()
+            MVCUIView().frame(width: 100, height: 50)
         }
         .padding()
     }
