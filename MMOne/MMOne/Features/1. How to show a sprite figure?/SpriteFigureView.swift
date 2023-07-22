@@ -62,6 +62,6 @@ struct SprintUIView : UIViewRepresentable {
     }
 }
 
-#Preview {
-    SpriteFigureView()
-}
+//#Preview {
+//    SpriteFigureView()
+//}

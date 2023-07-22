@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    var listViewModel = ItemListViewModel()
+
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -16,6 +18,8 @@ struct ContentView: View {
             Text("Hello, world!")
             SpriteFigureView()
             MVCUIView().frame(width: 100, height: 50)
+            ItemListView(viewModel: listViewModel)
+            TodoView(presenter: TodoPresenter())
         }
         .padding()
     }

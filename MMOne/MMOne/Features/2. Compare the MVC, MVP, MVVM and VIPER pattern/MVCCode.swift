@@ -23,11 +23,17 @@ class User {
 // View
 class UserView: UIView {
     let userNameLabel = UILabel()
+    let delegate: UserViewDelegate?
 
-    override init(frame: CGRect) {
+    init(frame: CGRect, delegate: UserViewDelegate? = nil) {
+        self.delegate = delegate
         super.init(frame: frame)
+
         userNameLabel.frame = frame
         self.addSubview(userNameLabel)
+
+        let tapGes = UITapGestureRecognizer(target: self, action: #selector(handleTap(_ :)))
+        self.addGestureRecognizer(tapGes)
     }
 
     required init?(coder: NSCoder) {
@@ -38,6 +44,15 @@ class UserView: UIView {
         print("Name: \\(name), Age: \\(age)")
         userNameLabel.text = "\(name) + \(age)"
     }
+
+    @objc func handleTap(_ gestureRecognizer: UITapGestureRecognizer) {
+        // 当手势被触发时，输出一条消息到控制台
+        self.delegate?.didTapUserView()
+    }
+}
+
+protocol UserViewDelegate {
+    func didTapUserView()
 }
 
 // Controller
@@ -64,10 +79,14 @@ class UserController {
 
 //MARK: Inject to SwiftUI
 
-struct MVCUIView: UIViewRepresentable {
+struct MVCUIView: UIViewRepresentable, UserViewDelegate {
+    func didTapUserView() {
+        print("TapGesture被触发了！")
+    }
+    
     func makeUIView(context: Context) -> UIView {
         let user = User(name: "Kevin", age: 18)
-        let userView = UserView(frame: CGRect(x: 0, y: 0, width: 100, height: 50))
+        let userView = UserView(frame: CGRect(x: 0, y: 0, width: 100, height: 50), delegate: self)
         let userController = UserController(user: user, userView: userView)
         userController.updateUser(name: "Kevin", age: 18)
         return userView
