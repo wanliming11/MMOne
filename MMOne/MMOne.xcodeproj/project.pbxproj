@@ -16,6 +16,8 @@
 		2309276329AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309276229AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift */; };
 		4E2C132F2A6BDA440065DB5E /* MVVMCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2C132E2A6BDA440065DB5E /* MVVMCode.swift */; };
 		4E2C13312A6BDAA70065DB5E /* VIPERCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2C13302A6BDAA70065DB5E /* VIPERCode.swift */; };
+		4E2C13362A6C324E0065DB5E /* TodoInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2C13352A6C324E0065DB5E /* TodoInteractorTest.swift */; };
+		4E2C13382A6C326E0065DB5E /* MockTodoInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2C13372A6C326E0065DB5E /* MockTodoInteractorTest.swift */; };
 		4E88B8982A6430A500BFDB59 /* MVCCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E88B8972A6430A500BFDB59 /* MVCCode.swift */; };
 		4EAD44392A54F9BA00E3FEBA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4EAD44382A54F9BA00E3FEBA /* README.md */; };
 		4EAD443C2A54FCF600E3FEBA /* SpriteFigureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAD443B2A54FCF600E3FEBA /* SpriteFigureView.swift */; };
@@ -90,6 +92,8 @@
 		2309276229AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDesignPatternUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4E2C132E2A6BDA440065DB5E /* MVVMCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCode.swift; sourceTree = "<group>"; };
 		4E2C13302A6BDAA70065DB5E /* VIPERCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPERCode.swift; sourceTree = "<group>"; };
+		4E2C13352A6C324E0065DB5E /* TodoInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoInteractorTest.swift; sourceTree = "<group>"; };
+		4E2C13372A6C326E0065DB5E /* MockTodoInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTodoInteractorTest.swift; sourceTree = "<group>"; };
 		4E88B8972A6430A500BFDB59 /* MVCCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCCode.swift; sourceTree = "<group>"; };
 		4EAD44382A54F9BA00E3FEBA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4EAD443B2A54FCF600E3FEBA /* SpriteFigureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteFigureView.swift; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 		2309273929AB864300059B0C = {
 			isa = PBXGroup;
 			children = (
+				4E2C13342A6C320B0065DB5E /* Test */,
 				4EAD44382A54F9BA00E3FEBA /* README.md */,
 				2309274429AB864300059B0C /* MMOne */,
 				2309275529AB864500059B0C /* BaseDesignPatternTests */,
@@ -217,6 +222,15 @@
 				2309276229AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift */,
 			);
 			path = BaseDesignPatternUITests;
+			sourceTree = "<group>";
+		};
+		4E2C13342A6C320B0065DB5E /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				4E2C13352A6C324E0065DB5E /* TodoInteractorTest.swift */,
+				4E2C13372A6C326E0065DB5E /* MockTodoInteractorTest.swift */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		4E88B8962A642FB000BFDB59 /* 2. Compare the MVC, MVP, MVVM and VIPER pattern */ = {
@@ -630,6 +644,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E2C13362A6C324E0065DB5E /* TodoInteractorTest.swift in Sources */,
+				4E2C13382A6C326E0065DB5E /* MockTodoInteractorTest.swift in Sources */,
 				2309275729AB864500059B0C /* BaseDesignPatternTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

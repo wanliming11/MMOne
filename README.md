@@ -33,14 +33,13 @@ MMOne is a project. This project wants to solve some small and complex problems,
 			1. 一般是同时需要音频录制和播放的场景，例如用户自己进行内容创作，一定会先录制后再进行播放，符合常规的业务
 	- 所有上面的策略设置，因为 AudioSession 是一个单例，都要考虑是否需要还原策略的场景，或者下一个业务场景需要使用的时候，重置下自己的策略，如果存在交叉场景，很容易出错。
 	- AVAudioSessionCategoryOptions 是一个掩码策略，用来满足在当前模式下的子定制化需求，类似于分组分支的小分支。
- - [ ] Compare the MVC, MVP, MVVM and VIPER pattern.
-    - 这几种代码架构模式都是前端比较相关的几种代码结构
-    - MVC 反应的是 Model, View, Control 之间的扭转
-    - MVP 反应的是 Model，View， Present 之间的扭转
-    - MVVM 反应的是 Model，View，ViewModel 之间的扭转
-    - Viper 更细分一些， View，Interact，Present，Entity，Router
-    - 用代码来区分关于视图的展示，响应，网络与逻辑的操作，页面路由的操作， Model 的处理，每个业务场景放在哪里更合适。
-    
+ - [x] Compare the MVC, MVP, MVVM and VIPER pattern.
+	- 这几种代码架构模式都是前端比较相关的几种代码结构
+	- MVC 反应的是 Model, View, Control 之间的扭转
+	- MVP 反应的是 Model，View， Present 之间的扭转
+	- MVVM 反应的是 Model，View，ViewModel 之间的扭转
+	- Viper 更细分一些， View，Interact，Present，Entity，Router
+	- 用代码来区分关于视图的展示，响应，网络与逻辑的操作，页面路由的操作， Model 的处理，每个业务场景放在哪里更合适。
 
 
 
