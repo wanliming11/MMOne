@@ -40,7 +40,17 @@ MMOne is a project. This project wants to solve some small and complex problems,
 	- MVVM 反应的是 Model，View，ViewModel 之间的扭转
 	- Viper 更细分一些， View，Interact，Present，Entity，Router
 	- 用代码来区分关于视图的展示，响应，网络与逻辑的操作，页面路由的操作， Model 的处理，每个业务场景放在哪里更合适。
-
+- [] Chains
+    - 案例里面有一个比较有趣的部分，就是会通过当前对象不断凭借，然后渲染富文本。
+    - OC 里面通过 Category 加上 AssociatedObject 的方式形成外部链条拼接；内部通过不断返回 Self 形成链条拼接。
+    - Swift 外部通过 Extensions 的
+- [] 并查集的应用场景
+- [] LRU
+- [x] iOS OC & Swift Category and extension
+- [x] iOS Read&Write Lock
+- [ ] iOS Atomatic Property
+    
+    
 
 
 
