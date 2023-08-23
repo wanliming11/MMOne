@@ -48,7 +48,9 @@ MMOne is a project. This project wants to solve some small and complex problems,
 - [] LRU
 - [x] iOS OC & Swift Category and extension
 - [x] iOS Read&Write Lock
-- [ ] iOS Atomatic Property
+- [x] iOS Atomatic Property
+- [x] Dynamic VM update:
+    - 演示了一个类似直播间需要动态插入数据的场景，不同的推荐数据，然后获取去进行更新
     
     
 

@@ -63,6 +63,8 @@
 		4ECBF2472A53B1AE00DEA60A /* HomeHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF22C2A53B1AE00DEA60A /* HomeHeadView.swift */; };
 		4ECBF2482A53B1AE00DEA60A /* LoadingDataFromFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF22D2A53B1AE00DEA60A /* LoadingDataFromFile.swift */; };
 		4ECBF2492A53B1AE00DEA60A /* TimeWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECBF22E2A53B1AE00DEA60A /* TimeWindow.swift */; };
+		4EEED3872A962F5B003FB0FA /* DynamicVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEED3862A962F5B003FB0FA /* DynamicVM.swift */; };
+		4EEED3892A9641B6003FB0FA /* LiveRainbowRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEED3882A9641B6003FB0FA /* LiveRainbowRoomView.swift */; };
 		E829811C2E42C84746E0D038 /* References in Resources */ = {isa = PBXBuildFile; fileRef = E829836C0DC17DBC43F087C7 /* References */; };
 		E8298899BC2F85EE75307F1D /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82982CEA7514339799C94CE /* Base.swift */; };
 		E8298A287E711DBA79B1F87F /* CreativeDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8298FE814F2F9DAFDDD9A9D /* CreativeDesign.swift */; };
@@ -147,6 +149,8 @@
 		4ECBF22C2A53B1AE00DEA60A /* HomeHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeadView.swift; sourceTree = "<group>"; };
 		4ECBF22D2A53B1AE00DEA60A /* LoadingDataFromFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingDataFromFile.swift; sourceTree = "<group>"; };
 		4ECBF22E2A53B1AE00DEA60A /* TimeWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeWindow.swift; sourceTree = "<group>"; };
+		4EEED3862A962F5B003FB0FA /* DynamicVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicVM.swift; sourceTree = "<group>"; };
+		4EEED3882A9641B6003FB0FA /* LiveRainbowRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveRainbowRoomView.swift; sourceTree = "<group>"; };
 		E829825D48BCB0C8EF2FC6B5 /* StructuralDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StructuralDesign.swift; sourceTree = "<group>"; };
 		E82982CEA7514339799C94CE /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		E829836C0DC17DBC43F087C7 /* References */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = References; sourceTree = "<group>"; };
@@ -323,6 +327,7 @@
 		4ECBF1F82A53AF0100DEA60A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				4EEED3852A962EF0003FB0FA /* 7. Dynamic VM update */,
 				4E3D48902A9397710062E029 /* 6. Write & Read Lock */,
 				4E1FC2C82A9305DB00EB9891 /* 5. category&extension */,
 				4EA710292A8F610A00F076F9 /* 4. LRU */,
@@ -515,6 +520,15 @@
 			path = ReusableTabView;
 			sourceTree = "<group>";
 		};
+		4EEED3852A962EF0003FB0FA /* 7. Dynamic VM update */ = {
+			isa = PBXGroup;
+			children = (
+				4EEED3862A962F5B003FB0FA /* DynamicVM.swift */,
+				4EEED3882A9641B6003FB0FA /* LiveRainbowRoomView.swift */,
+			);
+			path = "7. Dynamic VM update";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -693,10 +707,12 @@
 				4ECBF2472A53B1AE00DEA60A /* HomeHeadView.swift in Sources */,
 				4ECBF2042A53B1A300DEA60A /* HLSPlayerView.swift in Sources */,
 				4ECBF2322A53B1AE00DEA60A /* LiveRoomDanmuBoxController.swift in Sources */,
+				4EEED3872A962F5B003FB0FA /* DynamicVM.swift in Sources */,
 				4ECBF23E2A53B1AE00DEA60A /* MVPDelegate.swift in Sources */,
 				4E1FDE922A93370400EB9891 /* Person+Group.m in Sources */,
 				E8298A287E711DBA79B1F87F /* CreativeDesign.swift in Sources */,
 				4E88B8982A6430A500BFDB59 /* MVCCode.swift in Sources */,
+				4EEED3892A9641B6003FB0FA /* LiveRainbowRoomView.swift in Sources */,
 				4E2C132F2A6BDA440065DB5E /* MVVMCode.swift in Sources */,
 				4ECBF2482A53B1AE00DEA60A /* LoadingDataFromFile.swift in Sources */,
 				4ECBF22F2A53B1AE00DEA60A /* TextRoomView.swift in Sources */,
