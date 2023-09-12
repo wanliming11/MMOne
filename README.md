@@ -45,13 +45,15 @@ MMOne is a project. This project wants to solve some small and complex problems,
     - OC 里面通过 Category 加上 AssociatedObject 的方式形成外部链条拼接；内部通过不断返回 Self 形成链条拼接。
     - Swift 外部通过 Extensions 的
 - [] 并查集的应用场景
-- [] LRU
+- [x] LRU
 - [x] iOS OC & Swift Category and extension
 - [x] iOS Read&Write Lock
 - [x] iOS Atomatic Property
 - [x] Dynamic VM update:
     - 演示了一个类似直播间需要动态插入数据的场景，不同的推荐数据，然后获取去进行更新
-    
+- [ ] async and await
+- [ ] SwiftUI - Cell
+    * 
     
 
 

@@ -44,5 +44,5 @@ struct VideoRoomView: View {
         [RoomInfo(roomType: .LiveType, roomId: "1222", hashId: "", businessType: .HomeType),
          RoomInfo(roomType: .LiveType, roomId: "1223", hashId: "", businessType: .HomeType),
          RoomInfo(roomType: .VideoType, roomId: "1222", hashId: "122222", businessType: .HomeType)])
-    LiveRainbowRoomView(vm: obj)
+    return LiveRainbowRoomView(vm: obj)
 }

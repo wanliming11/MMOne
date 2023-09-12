@@ -1,111 +1,101 @@
-//
-//  LRU.swift
-//  MMOne
-//
-//  Created by kevin wan on 2023/8/18.
-//
-
 import Foundation
 
-class DoubleLinkedList {
-    /// node has next and pre.
+class LRU {
     class Node {
-        var key: Int   /// 存在 key 的目的，是为了能反向通过 node 找到 key ，清除 map
+        var key: Int
         var val: Int
-        var next: Node?
-        weak var pre: Node?
+        var next: Node? = nil
+        weak var prev: Node? = nil
 
-        init(key: Int, val: Int, next: Node? = nil, pre: Node? = nil) {
+        init(_ key: Int, _ val: Int) {
             self.key = key
             self.val = val
-            self.next = next
-            self.pre = pre
         }
     }
 
-    var _head: Node?
-    var _tail: Node?
-    var _nodeMap: [Int: Node] = [:]
+    /// 双链表属性
+    /// 虚拟头和尾节点，用来解决边界问题，避免出错
+    var vHead: Node? = Node(0, 0)
+    var vTail: Node? = Node(0, 0)
     var _size: Int = 0
-    var _maxSize: Int
+    /// 容量
+    let _capacity: Int
 
-    init(head: Node? = nil, tail: Node? = nil, maxSize: Int) {
-        self._head = head
-        self._tail = tail
-        self._maxSize = maxSize
+    var _map: [Int: Node] = [:]
+
+    init(_ capacity: Int) {
+        _capacity = capacity
+        vHead?.next = vTail
+        vTail?.prev = vHead
     }
 
-    /// 外部访问是通过 key
-    /// 内部的操作通过 node，因为 node 才是双链表和 map 交易的桥梁
-    ///
-    func get(_ key: Int) -> Int {
-        /// 1. fetch
-        /// 2. update the access level
-
-        if let node = _nodeMap[key] {
-            moveToHead(node)
-            return node.val
-        }
-
-        return -1  /// not found
+    //MARK: 双链表基础操作
+    /// 1. 添加节点到头部
+    func addHeadLinkNode(_ node: Node) {
+        node.next = vHead?.next
+        node.prev = vHead
+        vHead?.next?.prev = node
+        vHead?.next = node
     }
 
+    /// 2. 添加节点到尾部
+    func addTailLinkNode(_ node: Node) {
+        let prev = vTail?.prev
+        prev?.next = node
+        node.prev = prev
+        node.next = vTail
+        vTail?.prev = node
+    }
 
-    func put(_ key: Int, _ value: Int) {
-        /// 1. fetch
-        ///    1.1 not exsit
-        ///      1. store to map
-        ///      2. insert to head
-        ///      3. if full, delete tail
-        ///    1.2 exist
-        ///      1. moveToHead
-        if let node = _nodeMap[key] {
-            moveToHead(node)
-        }
-        else {
-            let node = Node(key: key, val: value)
-            _nodeMap[key] = node
+    /// 3. 移除节点
+    func removeLinkNode(_ node: Node) {
+        node.prev?.next = node.next
+        node.next?.prev = node.prev
+    }
 
-            insertToHead(node)
-            _size += 1
-            if _size > _maxSize {
-                deleteTail()
-                _nodeMap[key] = nil  //update map
+    /// 4.
+    func moveNodeToHead(_ node: Node) {
+        removeLinkNode(node)
+        addHeadLinkNode(node)
+    }
+
+    //MARK: 复合操作，字典和双链表一起, 增加和删除操作一体
+    func addNode(_ key:Int, node: Node) {
+        addHeadLinkNode(node)
+        _map[key] = node
+        _size += 1
+    }
+
+    func cleanIfExceeded() {
+        if _size > _capacity {
+            if let tail = vTail?.prev, tail !== vHead {
+                removeLinkNode(tail)
+                _map[tail.key] = nil
+                _size -= 1
             }
         }
     }
 
 
-    /// 提升访问等级
-    func moveToHead(_ node: Node) {
-        guard node !== _head else { return }  /// 头节点不需要提升
-        /// 1. remove node
-        /// 2. insert node
-        deleteNode(node)
-        insertToHead(node)
+    //MARK: Output
+    func get(_ key: Int) -> Int {
+        if let v = _map[key] {
+            moveNodeToHead(v)
+            return v.val
+        }
+        return -1
     }
 
-    func deleteNode(_ node: Node) {
-        var node = node
-        node.pre?.next = node.next
-        node.next?.pre = node.pre
+    func put(_ key: Int, _ value: Int) {
+        /// If existed, update and moveNodeToHead
+        if let v = _map[key] {
+            moveNodeToHead(v)
+            v.val = value
+        }
+        else {
+            addNode(key, node: Node(key, value))
+            cleanIfExceeded()
+        }
     }
 
-    func insertToHead(_ node: Node) {
-        var node = node
-        _head?.pre = node
-        node.next = _head
-
-        _head = node
-    }
-
-    func deleteTail() {
-        let node = _tail?.pre
-        _tail?.pre?.next = nil
-
-        _tail = node
-    }
 }
-
-
-
