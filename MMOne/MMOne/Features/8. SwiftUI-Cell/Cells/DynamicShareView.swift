@@ -13,8 +13,12 @@ struct DynamicShareView: View {
         HStack {
             ForEach(viewModel.items, id: \.id) { item in
                 HStack {
-                    Text(item.icon)
+                    Spacer()
+                    Image(item.icon)
+                        .resizable()
+                        .frame(width: 44, height: 44)
                     Text(item.text)
+                    Spacer()
                 }
             }
         }
@@ -23,5 +27,5 @@ struct DynamicShareView: View {
 
 @available(iOS 17.0, *)
 #Preview {
-    DynamicShareView(viewModel:  DynamicCellViewModel.ShareViewModel (items: []))
+    DynamicShareView(viewModel:  DynamicCellViewModel.ShareViewModel (items: [DynamicCellViewModel.ShareViewModel.Item(icon: "ShareStand", text: "表态"), DynamicCellViewModel.ShareViewModel.Item(icon: "SharePraise", text: "122"), DynamicCellViewModel.ShareViewModel.Item(icon: "ShareComment", text: "86")]))
 }

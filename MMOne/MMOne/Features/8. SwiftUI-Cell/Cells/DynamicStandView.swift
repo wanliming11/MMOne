@@ -13,10 +13,13 @@ struct DynamicStandView: View {
         HStack {
             ForEach(viewModel.items, id: \.id) { item in
                 HStack {
+                    Image(item.icon)
+                        .resizable()
+                        .frame(width: 22, height: 22)
                     Text(item.num)
-                    Text(item.icon)
                 }
             }
+            Spacer()
         }
     }
 }
@@ -24,6 +27,6 @@ struct DynamicStandView: View {
 @available(iOS 17.0, *)
 #Preview {
     DynamicStandView(viewModel:
-                        DynamicCellViewModel.StandViewModel(items: []))
+                        DynamicCellViewModel.StandViewModel(items: [DynamicCellViewModel.StandViewModel.Item(icon: "TopicThings", num: "111"), DynamicCellViewModel.StandViewModel.Item(icon: "TopicThings", num: "222"), DynamicCellViewModel.StandViewModel.Item(icon: "TopicThings", num: "333")]))
 }
 

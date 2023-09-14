@@ -39,7 +39,7 @@ struct VideoRoomView: View {
 
 @available(iOS 17.0, *)
 #Preview {
-    var obj = DynamicVM(["ext": "yuba"])
+    let obj = DynamicVM(["ext": "yuba"])
     obj.insertRecommendData(
         [RoomInfo(roomType: .LiveType, roomId: "1222", hashId: "", businessType: .HomeType),
          RoomInfo(roomType: .LiveType, roomId: "1223", hashId: "", businessType: .HomeType),

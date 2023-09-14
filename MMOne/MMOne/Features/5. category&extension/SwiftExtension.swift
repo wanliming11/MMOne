@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-
 extension UIView {
     /// 1. calc proto
     var x: CGFloat {

@@ -8,8 +8,34 @@
 import SwiftUI
 
 struct DynamicContainerView: View {
-    var model = DynamicCellViewModel()
+    @StateObject var model = DynamicCellViewModel()
+
+    private func gridLayout() -> [GridItem] {
+        return [
+            GridItem(.flexible())
+        ]
+
+    }
+
+    var body: some View {
+        ScrollView {
+            LazyVGrid(columns: gridLayout(), alignment: .leading, spacing: 30)  {
+                ForEach(0 ..< 9, id: \.self) { _ in
+                    ExtractedView(model: model)
+                }
+            }
+        }
+    }
+}
+
+@available(iOS 17.0, *)
+#Preview {
+    DynamicContainerView()
+}
+
+struct ExtractedView: View {
     @State private var hiddenNitif = false
+    var model: DynamicCellViewModel
 
     var body: some View {
         VStack {
@@ -24,11 +50,6 @@ struct DynamicContainerView: View {
             DynamicTopicView(viewModel: model.topicViewModel)
             DynamicStandView(viewModel: model.standViewModel)
             DynamicShareView(viewModel: model.shareViewModel)
-        }.width(375)
+        }
     }
-}
-
-@available(iOS 17.0, *)
-#Preview {
-    DynamicContainerView()
 }

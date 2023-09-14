@@ -8,6 +8,14 @@
 import Foundation
 
 class DynamicCellViewModel: ObservableObject {
+    struct VideoItem {
+        var url: String
+    }
+
+    struct ImageItem {
+        var url: String
+    }
+
     struct NotifViewModel {
         var content: String
     }
@@ -24,12 +32,24 @@ class DynamicCellViewModel: ObservableObject {
     }
 
     struct ImageViewModel {
-        var imgs: [String]
+        enum ImageType {
+            case Image
+            case Video
+            case Gif
+        }
+
+        struct ImageItem {
+            var url: String
+            var type: ImageType
+        }
+        var imgs: [ImageItem]
     }
 
     struct VoteViewModel {
+        var id = UUID()
         var title: String
         var options: [String]
+        var num: Int
     }
 
     struct TopicViewModel {
@@ -80,10 +100,23 @@ class DynamicCellViewModel: ObservableObject {
                                              举头望明月，低头思故乡。                                                                                                                                            
                                       """
                                         )
-        imageViewModel = ImageViewModel(imgs: ["https://img0.baidu.com/it/u=1910540168,2901566440&fm=253&fmt=auto&app=138&f=JPEG?w=499&h=332", "https://www.2008php.com/2012_Website_appreciate/2012-03-25/20120325110634.jpg", "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg"])
-        voteViewModel = VoteViewModel(title: "投票", options: ["选项1", "选项2", "选项3"])
-        topicViewModel = TopicViewModel(topics: [TopicViewModel.Item(icon: "topic1", text: "话题1"), TopicViewModel.Item(icon: "topic2", text: "话题2"), TopicViewModel.Item(icon: "topic3", text: "话题3"), TopicViewModel.Item(icon: "topic4", text: "话题4")])
-        standViewModel = StandViewModel(items: [StandViewModel.Item(icon: "stand1", num: "1"), StandViewModel.Item(icon: "stand2", num: "2"), StandViewModel.Item(icon: "stand3", num: "3")])
-        shareViewModel = ShareViewModel(items: [ShareViewModel.Item(icon: "comment1", text: "评论1"), ShareViewModel.Item(icon: "comment2", text: "评论2"), ShareViewModel.Item(icon: "comment3", text: "评论3")])
+        imageViewModel = ImageViewModel(imgs: [ImageViewModel.ImageItem(url: "https://img0.baidu.com/it/u=1910540168,2901566440&fm=253&fmt=auto&app=138&f=JPEG?w=499&h=332", type: .Image),
+                                               ImageViewModel.ImageItem(url: "https://www.2008php.com/2012_Website_appreciate/2012-03-25/20120325110634.jpg", type: .Image),
+                                               ImageViewModel.ImageItem(url: "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Video),
+                                               ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),
+                                               ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),
+                                               ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),
+                                               ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),
+                                               ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),
+                                               ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),
+                                               ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),
+                                               ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),
+                                               ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),
+                                               ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),
+                                              ])
+        voteViewModel = VoteViewModel(title: "今天中午吃什么?", options: ["螺蛳粉", "火锅", "麻辣烫","酸辣粉","烤肉","炒菜"], num: 27)
+        topicViewModel = TopicViewModel(topics: [TopicViewModel.Item(icon: "TopicThings", text: "日常碎片"), TopicViewModel.Item(icon: "TopicChat", text: "高光时刻")])
+        standViewModel = StandViewModel(items: [StandViewModel.Item(icon: "TopicThings", num: "111"), StandViewModel.Item(icon: "TopicThings", num: "222"), StandViewModel.Item(icon: "TopicThings", num: "333")])
+        shareViewModel = ShareViewModel(items: [ShareViewModel.Item(icon: "ShareStand", text: "表态"), ShareViewModel.Item(icon: "SharePraise", text: "122"), ShareViewModel.Item(icon: "ShareComment", text: "86")])
     }
 }

@@ -589,6 +589,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4EE8310D2AB34AA6003819DA /* PBXTargetDependency */,
 			);
 			name = MMOne;
 			packageProductDependencies = (
@@ -673,6 +674,7 @@
 				4ECB0D872A54473900DEA60A /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				4ECB0D8A2A54485E00DEA60A /* XCRemoteSwiftPackageReference "SwiftUIX" */,
 				4ECB0D8D2A54491F00DEA60A /* XCRemoteSwiftPackageReference "Swinject" */,
+				4EE8310B2AB346AD003819DA /* XCRemoteSwiftPackageReference "swiftlint-plugin" */,
 			);
 			productRefGroup = 2309274329AB864300059B0C /* Products */;
 			projectDirPath = "";
@@ -812,6 +814,10 @@
 			isa = PBXTargetDependency;
 			target = 2309274129AB864300059B0C /* MMOne */;
 			targetProxy = 2309275D29AB864500059B0C /* PBXContainerItemProxy */;
+		};
+		4EE8310D2AB34AA6003819DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 4EE8310C2AB34AA6003819DA /* SwiftLintPlugin */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1137,6 +1143,14 @@
 				minimumVersion = 2.8.3;
 			};
 		};
+		4EE8310B2AB346AD003819DA /* XCRemoteSwiftPackageReference "swiftlint-plugin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamayoung/swiftlint-plugin.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.51.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1154,6 +1168,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4ECB0D8D2A54491F00DEA60A /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
+		};
+		4EE8310C2AB34AA6003819DA /* SwiftLintPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4EE8310B2AB346AD003819DA /* XCRemoteSwiftPackageReference "swiftlint-plugin" */;
+			productName = "plugin:SwiftLintPlugin";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
