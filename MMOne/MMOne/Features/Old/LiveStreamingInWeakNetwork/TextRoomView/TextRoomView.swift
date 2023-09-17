@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TextRoomView: View {
     var id: Int
-    
+
     var body: some View {
         Color.blue
     }

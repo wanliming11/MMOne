@@ -20,26 +20,26 @@ struct ContentView: View {
                 Text("Hello, world!")
                 SpriteFigureView()
                 MVCUIView().frame(width: 100, height: 50)
-                LiveRainbowRoomView(vm: obj)
+                LiveRainbowRoomView(roomViewModel: obj)
                 ItemListView(viewModel: listViewModel)
-                    .onAppear() {
-                        /// 1. test associatedtype
+                    .onAppear {
+                        // 1. test associatedtype
     //                    let person = Person()
     //                    person.printGroup()
-                        /// 2. test read&write lock
+                        // 2. test read&write lock
     //                    let lock = ReadAndWriteLock()
     //                    DispatchQueue.concurrentPerform(iterations: 50) { _ in
     //                        lock.setValue(42)
     //                        NSLog("\(lock.getValue())")
     //                    }
-                        /// 3. test atomic property
+                        // 3. test atomic property
     //                    let atomicLock = AtomicPropertyLock()
     //                    DispatchQueue.concurrentPerform(iterations: 10) { i  in
     //                        atomicLock.setValue(i)
     //                        NSLog("\(atomicLock.getValue())")
     //                    }
 
-                        /// 4. Dead lock
+                        // 4. Dead lock
     //                    let serialQueue = DispatchQueue(label: "com.example.serial")
     //
     //                    serialQueue.async {
@@ -50,18 +50,18 @@ struct ContentView: View {
     //                    }
     //
     //                    print("skip")
-                        /// 5. upate data
+                        // 5. upate data
     //                    obj.insertRecommendData(
     //                        [RoomInfo(roomType: .LiveType, roomId: "1222", hashId: "", businessType: .HomeType),
     //                         RoomInfo(roomType: .LiveType, roomId: "1223", hashId: "", businessType: .HomeType),
-    //                         RoomInfo(roomType: .VideoType, roomId: "1222", hashId: "122222", businessType: .HomeType)])
+    //                         RoomInfo(roomType: .VideoType, roomId: "1222", hashId: "122", businessType: .HomeType)])
     //
     //                    let delayTime = DispatchTime.now() + 2.0 // 延迟 2 秒
     //                    DispatchQueue.main.asyncAfter(deadline: delayTime) {
     //                    obj.insertRecommendData(
     //                            [RoomInfo(roomType: .VideoType, roomId: "aaabb", hashId: "", businessType: .HomeType),
     //                             RoomInfo(roomType: .LiveType, roomId: "1223", hashId: "", businessType: .HomeType),
-    //                             RoomInfo(roomType: .VideoType, roomId: "1222", hashId: "122222", businessType: .HomeType)])
+    //                             RoomInfo(roomType: .VideoType, roomId: "22", hashId: "22", businessType: .HomeType)])
     //                    }
                     }
                 DynamicContainerView()

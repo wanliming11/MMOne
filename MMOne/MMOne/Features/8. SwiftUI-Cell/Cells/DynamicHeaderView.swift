@@ -17,5 +17,6 @@ struct DynamicHeaderView: View {
 
 @available(iOS 17.0, *)
 #Preview {
-    DynamicHeaderView(viewModel: DynamicCellViewModel.HeadViewModel(image: "image", name: "name", time: "time", content: "content"))
+    let model = DynamicCellViewModel.HeadViewModel(image: "image", name: "name", time: "time", content: "content")
+    return DynamicHeaderView(viewModel: model)
 }

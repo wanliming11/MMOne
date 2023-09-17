@@ -13,19 +13,21 @@ import UIKit
 /// 5. 因为 Appdelegate 的生命周期比较早，所以需要更早的时机去注册对象，让对应的对象可以
 
 class MVPDelegate: NSObject, UIApplicationDelegate {
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil)
+                    -> Bool {
         AppDeleagateDispatcher.default.register(ADAppDelegate())
         AppDeleagateDispatcher.default.register(HomeAppDelegate())
 
         /// 这里由于动态派发的实现逻辑比较容易出错，所以这里手动去遍历派发
         /// 这里带来的问题就是这个 MVPDelegate 是一个更高的位置去调度，也就是要单独依赖
-        for c in AppDeleagateDispatcher.default.delegates {
-            let _ = c?.application?(application, didFinishLaunchingWithOptions: launchOptions)
+        for delegate in AppDeleagateDispatcher.default.delegates {
+            _ = delegate?.application?(application, didFinishLaunchingWithOptions: launchOptions)
         }
-        
+
         return true
     }
-    
+
     func applicationWillResignActive(_ application: UIApplication) {
         // 分发 applicationWillResignActive(_:) 方法
         AppDeleagateDispatcher.default.dispatch(#selector(applicationWillResignActive(_:)))

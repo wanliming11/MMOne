@@ -26,10 +26,8 @@ struct HomeTabView: View {
     }
 }
 
-
 struct HomeTabView_Previews: PreviewProvider {
     static var previews: some View {
         HomeTabView()
     }
 }
-

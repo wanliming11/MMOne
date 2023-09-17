@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct LiveRainbowRoomView: View {
-    @ObservedObject var vm: DynamicVM
+    @ObservedObject var roomViewModel: DynamicVM
 
     var body: some View {
-        ForEach(vm.rooms) { room in
-            if room.roomType == .LiveType {
+        ForEach(roomViewModel.rooms) { room in
+            if room.roomType == .liveType {
                 LiveRainRoomView(room: room)
             } else {
                 VideoRoomView(room: room)
@@ -41,8 +41,8 @@ struct VideoRoomView: View {
 #Preview {
     let obj = DynamicVM(["ext": "yuba"])
     obj.insertRecommendData(
-        [RoomInfo(roomType: .LiveType, roomId: "1222", hashId: "", businessType: .HomeType),
-         RoomInfo(roomType: .LiveType, roomId: "1223", hashId: "", businessType: .HomeType),
-         RoomInfo(roomType: .VideoType, roomId: "1222", hashId: "122222", businessType: .HomeType)])
-    return LiveRainbowRoomView(vm: obj)
+        [RoomInfo(roomType: .liveType, roomId: "1222", hashId: "", businessType: .homeType),
+         RoomInfo(roomType: .liveType, roomId: "1223", hashId: "", businessType: .homeType),
+         RoomInfo(roomType: .videoType, roomId: "1222", hashId: "122222", businessType: .homeType)])
+    return LiveRainbowRoomView(roomViewModel: obj)
 }

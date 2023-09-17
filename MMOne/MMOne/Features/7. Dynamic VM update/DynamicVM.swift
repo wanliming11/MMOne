@@ -9,13 +9,13 @@ import Foundation
 import Combine
 
 enum BussinessType {
-    case PartitionType
-    case HomeType
+    case partitionType
+    case homeType
 }
 
 enum RoomType {
-    case LiveType
-    case VideoType
+    case liveType
+    case videoType
 }
 
 struct RoomInfo: Identifiable {
@@ -26,21 +26,20 @@ struct RoomInfo: Identifiable {
     var businessType: BussinessType
 }
 
-
 class DynamicVM: ObservableObject {
     @Published var rooms: [RoomInfo] = []
-    var info: Dictionary<String, String> = [:]
+    var info: [String: String] = [:]
     var currentIndex = -1
     var currentRoominfo: RoomInfo? {
         return self.currentIndex > 0 && self.currentIndex < self.rooms.count ?
             self.rooms[self.currentIndex] : nil
     }
 
-    init(_ context: Dictionary<String, String>) {
+    init(_ context: [String: String]) {
         self.info = context
     }
 
-    //MARK: Fixed data
+    // MARK: Fixed data
     /// 正向反馈数据
     func insertRecommendData(_ datas: [RoomInfo]) {
         rooms.append(contentsOf: datas)
@@ -49,7 +48,7 @@ class DynamicVM: ObservableObject {
     /// 不感兴趣数据
     func filterData(by type: BussinessType) {
         rooms.removeAll { info in
-            info.businessType != .PartitionType
+            info.businessType != .partitionType
         }
     }
 
@@ -57,37 +56,37 @@ class DynamicVM: ObservableObject {
     ///    - param: data 需要拼装的数据，发生在切换直播间的时候
     ///    - return: 有则索引到对应的 index，无则返回 nil
     func appendDataIfNeeded(_ data: RoomInfo) -> Int? {
-        var index: Int? = nil
-        for i in 0 ..< rooms.count {
-            switch rooms[i].roomType {
-            case .LiveType:
-                if rooms[i].roomId == data.roomId {
-                    index = i
+        var matchIndex: Int?
+        for index in 0 ..< rooms.count {
+            switch rooms[index].roomType {
+            case .liveType:
+                if rooms[index].roomId == data.roomId {
+                    matchIndex = index
                     break
                 }
-            case .VideoType:
-                if rooms[i].hashId == data.hashId {
-                    index = i
+            case .videoType:
+                if rooms[index].hashId == data.hashId {
+                    matchIndex = index
                     break
                 }
             }
         }
 
-        if index == nil  {
+        if matchIndex == nil {
             rooms.append(data)
         }  /// 没有匹配的添加到最后一条
 
-        return index
+        return matchIndex
     }
 
-    //MARK: Search
+    // MARK: Search
     func isCurrentRoom(_ roominfo: RoomInfo) -> Bool {
         guard currentIndex >= 0, currentIndex < rooms.count else { return false }
 
         switch roominfo.roomType {
-        case .LiveType:
+        case .liveType:
             return roominfo.roomId == rooms[currentIndex].roomId
-        case .VideoType:
+        case .videoType:
             return roominfo.hashId == rooms[currentIndex].hashId
         }
     }

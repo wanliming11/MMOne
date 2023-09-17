@@ -16,7 +16,7 @@ struct DynamicStandView: View {
                     Image(item.icon)
                         .resizable()
                         .frame(width: 22, height: 22)
-                    Text(item.num)
+                    Text(item.text)
                 }
             }
             Spacer()
@@ -26,7 +26,9 @@ struct DynamicStandView: View {
 
 @available(iOS 17.0, *)
 #Preview {
-    DynamicStandView(viewModel:
-                        DynamicCellViewModel.StandViewModel(items: [DynamicCellViewModel.StandViewModel.Item(icon: "TopicThings", num: "111"), DynamicCellViewModel.StandViewModel.Item(icon: "TopicThings", num: "222"), DynamicCellViewModel.StandViewModel.Item(icon: "TopicThings", num: "333")]))
+    let item1 = DynamicCellViewModel.Item(icon: "TopicThings", text: "111")
+    let item2 = DynamicCellViewModel.Item(icon: "TopicThings", text: "222")
+    let item3 = DynamicCellViewModel.Item(icon: "TopicThings", text: "333")
+    return DynamicStandView(viewModel:
+                        DynamicCellViewModel.StandViewModel(items: [item1, item2, item3]))
 }
-

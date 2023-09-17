@@ -11,7 +11,7 @@ import VideoToolbox
 
 struct RTMPPlayerView: UIViewRepresentable {
     let url: String
-    
+
     func makeUIView(context: Context) -> UIView {
 //        let rtmpConnection = RTMPConnection()
 //        let rtmpStream = RTMPStream(connection: rtmpConnection)
@@ -33,4 +33,3 @@ struct RTMPPlayerView: UIViewRepresentable {
     func updateUIView(_ uiView: UIView, context: Context) {
     }
 }
-

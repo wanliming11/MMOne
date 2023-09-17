@@ -25,7 +25,7 @@ class UserView: UIView {
     let userNameLabel = UILabel()
     let delegate: UserViewDelegate?
 
-    init(frame: CGRect, delegate: UserViewDelegate? = nil) {
+    init(frame: CGRect, delegate: UserViewDelegate?) {
         self.delegate = delegate
         super.init(frame: frame)
 
@@ -51,7 +51,7 @@ class UserView: UIView {
     }
 }
 
-protocol UserViewDelegate {
+protocol UserViewDelegate: AnyObject {
     func didTapUserView()
 }
 
@@ -76,24 +76,25 @@ class UserController {
     }
 }
 
-
-//MARK: Inject to SwiftUI
-
-struct MVCUIView: UIViewRepresentable, UserViewDelegate {
+class TapDelegate: UserViewDelegate {
     func didTapUserView() {
         print("TapGesture被触发了！")
     }
-    
+}
+
+// MARK: Inject to SwiftUI
+struct MVCUIView: UIViewRepresentable {
     func makeUIView(context: Context) -> UIView {
         let user = User(name: "Kevin", age: 18)
-        let userView = UserView(frame: CGRect(x: 0, y: 0, width: 100, height: 50), delegate: self)
+        let delegate = TapDelegate()
+        let userView = UserView(frame: CGRect(x: 0, y: 0, width: 100, height: 50), delegate: delegate)
         let userController = UserController(user: user, userView: userView)
         userController.updateUser(name: "Kevin", age: 18)
         return userView
     }
 
     func updateUIView(_ uiView: UIView, context: Context) {
-        
+
     }
 
 }

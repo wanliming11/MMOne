@@ -25,9 +25,6 @@ struct MultiColumns: View {
     }
 }
 
-
-
-
 struct MultiColumns_Previews: PreviewProvider {
     static var previews: some View {
         MultiColumns()

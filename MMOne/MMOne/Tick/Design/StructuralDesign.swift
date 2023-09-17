@@ -220,7 +220,6 @@ class FlyweightFactory {
     }
 }
 
-
 class StructuralDesignTest: NSObject {
     override init() {
         super.init()
@@ -310,23 +309,5 @@ class StructuralDesignTest: NSObject {
         flyweightL.operation()
         flyweightM.operation()
         flyweightN.operation()
-        flyweightO.operation()
-        flyweightP.operation()
-        flyweightQ.operation()
-        flyweightR.operation()
-        flyweightS.operation()
-        flyweightT.operation()
-        flyweightU.operation()
-        flyweightV.operation()
-        flyweightW.operation()
-        flyweightX.operation()
-        flyweightY.operation()
-        flyweightZ.operation()
     }
 }
-
-
-
-
-
-

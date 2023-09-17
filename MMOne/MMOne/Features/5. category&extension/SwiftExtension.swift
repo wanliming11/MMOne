@@ -10,7 +10,7 @@ import UIKit
 
 extension UIView {
     /// 1. calc proto
-    var x: CGFloat {
+    var xPoint: CGFloat {
         get {
             return self.frame.origin.x
         }
@@ -19,7 +19,7 @@ extension UIView {
         }
     }
 
-    var y: CGFloat {
+    var yPoint: CGFloat {
         get {
             return self.frame.origin.y
         }

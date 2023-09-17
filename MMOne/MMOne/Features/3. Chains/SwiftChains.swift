@@ -12,5 +12,4 @@ extension String {
     func append(newElement element: String) -> String {
         return self + element
     }
-    
 }

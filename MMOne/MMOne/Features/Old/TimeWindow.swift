@@ -11,11 +11,10 @@ import Foundation
 class TimeWindow: TimeStrategy, WindowAccess {
     var time: CGFloat = 1  // 秒
     var frequency: Int = 2
-    
     var lock: NSLock = NSLock()
-    var lastTime: CGFloat? = nil
+    var lastTime: CGFloat?
     var count: Int = 0
-    
+
     func tryAccess() -> Bool {
         /// 1. 在时间窗口内尝试访问lock，如果不能获取到，直接返回 false
         /// 如果能访问到，则进入后，先判断窗口时间是否满足，如果已经超出了一个时间窗口，则重置计数
@@ -29,16 +28,14 @@ class TimeWindow: TimeStrategy, WindowAccess {
                 count = 0
                 lastTime = curTime
             }
-            
+
             count += 1
             return count <= frequency
         }
-        
+
         return false
     }
-    
 }
-
 
 /// 时间策略
 protocol TimeStrategy {

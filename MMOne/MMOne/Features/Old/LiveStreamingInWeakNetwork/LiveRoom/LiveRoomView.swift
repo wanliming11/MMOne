@@ -10,14 +10,13 @@ import UIKit
 
 struct LiveRoomView: View {
     var id: Int
-    
+
     var body: some View {
         ZStack {
             Color.red
             LiveRoomBaseUIBoxView().id("LiveRoomBaseUI")
         }
     }
-    
 }
 
 struct LiveRoomView_Previews: PreviewProvider {

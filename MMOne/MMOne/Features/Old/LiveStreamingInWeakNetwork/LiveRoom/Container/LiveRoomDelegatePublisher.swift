@@ -9,16 +9,15 @@ import Foundation
 import Combine
 
 class LiveRoomDelegatePublisher {
-    
     /// 直播间已重载，用于重新加载自己的业务
     /// - parameter source: 触发刷新的场景
     static func notifLiveRoomDidRefresh(source: LiveRoomRefreshType) {
         let notif = LiveRoomRegister.shared.getNotifiObservers(LiveRoomDelegate.self)
         notif?.forEach { obj in
-            obj.liveRoomDidRefresh(source: LiveRoomRefreshType.LiveRoomRefreshTypeChangeRoom)
+            obj.liveRoomDidRefresh(source: LiveRoomRefreshType.liveRoomRefreshTypeChangeRoom)
         }
     }
-    
+
     /// 通知直播间即将加载
     static func notifLiveRoomViewWillAppear() {
         let notif = LiveRoomRegister.shared.getNotifiObservers(LiveRoomDelegate.self)

@@ -25,5 +25,3 @@ class AtomicPropertyLock {
         return result
     }
 }
-
-

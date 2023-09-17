@@ -19,26 +19,23 @@ struct HomeVideoCell: View {
             GeometryReader { geometry in
                 VideoPlayer(player: player)
                     .frame(width: geometry.size.width, height: geometry.size.height)
-                    .onAppear() {
+                    .onAppear {
                         player.seek(to: .zero)
                         player.play()
                         addObserver()
                     }
-                    .onDisappear() {
+                    .onDisappear {
                         removeObserver()
                     }
             }
         }
-        
     }
-    
-    
     // MARK: observer
     func addObserver() {
 
         NotificationCenter.default.addObserver(forName: .AVPlayerItemDidPlayToEndTime,
                                                object: player.currentItem,
-                                               queue: nil) { notif in // 3
+                                               queue: nil) { _  in // 3
             player.seek(to: .zero) // 4
             player.play() // 5
         }
@@ -51,7 +48,6 @@ struct HomeVideoCell: View {
 
             }
 }
-
 
 struct HomeVideoCell_Previews: PreviewProvider {
     static var previews: some View {

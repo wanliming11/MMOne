@@ -16,7 +16,6 @@ import CoreGraphics
 /// 如果位置是 0， 则是 （0 % 10）/ 10.0 = 0.0 ， （1 / 10）/ 10.0 = 0.0 第一行第一个
 /// 如果位置是 11，则是 （11 % 10）/ 10.0 = 0.1,  (11 / 10) / 10.0 = 0.1   第二行第二个
 
-
 final class SpriteFigureParser {
     /// - param: time 单位秒
     /// - return: 返回转换的 rect，转换为 ContentRect 对应的比率

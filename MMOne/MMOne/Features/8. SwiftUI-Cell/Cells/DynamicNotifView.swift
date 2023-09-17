@@ -20,7 +20,3 @@ struct DynamicNotifView: View {
         }
     }
 }
-//@available(iOS 17.0, *)
-//#Preview {
-//    DynamicNotifView(viewModel: DynamicCellViewModel.NotifViewModel(content: "这是一条通知"))
-//}

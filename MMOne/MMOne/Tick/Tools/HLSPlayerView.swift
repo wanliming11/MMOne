@@ -11,7 +11,7 @@ import SwiftUI
 
 struct HLSPlayerView: UIViewRepresentable {
     let url: String
-    
+
     func makeUIView(context: Context) -> UIView {
         let player = AVPlayer(url: URL(string: url)!)
         let playerLayer = AVPlayerLayer(player: player)

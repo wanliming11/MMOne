@@ -13,17 +13,17 @@ struct DynamicImagesView: View {
     let maxCounter = 9
 
     var body: some View {
-        LazyVGrid(columns: gridLayout(), alignment: .leading, spacing: 4.5)  {
-            ForEach(0 ..< (viewModel.imgs.count >= maxCounter ? maxCounter : viewModel.imgs.count), id: \.self) { i in
+        LazyVGrid(columns: gridLayout(), alignment: .leading, spacing: 4.5) {
+        ForEach(0 ..< (viewModel.imgs.count >= maxCounter ? maxCounter : viewModel.imgs.count), id: \.self) { index in
                 ZStack {
-                    KFImage(URL(string: viewModel.imgs[i].url))
+                    KFImage(URL(string: viewModel.imgs[index].url))
                         .resizable()
-                    if viewModel.imgs[i].type == .Video {
+                    if viewModel.imgs[index].type == .video {
                         Image("VideoPlay")
                             .frame(width: 36, height: 36)
                     }
                     if viewModel.imgs.count > maxCounter {
-                        if i == maxCounter - 1 {
+                        if index == maxCounter - 1 {
                             ZStack {
                                 Color.black.opacity(0.5)
                                 Text("+\(viewModel.imgs.count - maxCounter)")
@@ -57,19 +57,47 @@ struct DynamicImagesView: View {
 
 @available(iOS 17.0, *)
 #Preview {
-    DynamicImagesView(viewModel: DynamicCellViewModel.ImageViewModel(imgs: [
-        DynamicCellViewModel.ImageViewModel.ImageItem(url: "https://img0.baidu.com/it/u=1910540168,2901566440&fm=253&fmt=auto&app=138&f=JPEG?w=499&h=332", type: .Image),
-        DynamicCellViewModel.ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),])).padding(.horizontal, 15)
+DynamicImagesView(viewModel: DynamicCellViewModel.ImageViewModel(imgs: [
+DynamicCellViewModel.ImageItem(url: "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg",
+                                   type: .image),
+DynamicCellViewModel.ImageItem(url: "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg",
+                               type: .image)])).padding(.horizontal, 15)
 }
 
 #Preview {
     DynamicImagesView(viewModel: DynamicCellViewModel.ImageViewModel(imgs: [
-        DynamicCellViewModel.ImageViewModel.ImageItem(url: "https://img0.baidu.com/it/u=1910540168,2901566440&fm=253&fmt=auto&app=138&f=JPEG?w=499&h=332", type: .Image),
-        DynamicCellViewModel.ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),DynamicCellViewModel.ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),DynamicCellViewModel.ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Video)])).padding(.horizontal, 15)
+        DynamicCellViewModel.ImageItem(url: "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg",
+                                       type: .image),
+        DynamicCellViewModel.ImageItem(url: "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg",
+                                       type: .image),
+        DynamicCellViewModel.ImageItem(url: "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg",
+                                       type: .image),
+        DynamicCellViewModel.ImageItem(url: "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg",
+                                       type: .video)])).padding(.horizontal, 15)
 }
 
 #Preview {
     DynamicImagesView(viewModel: DynamicCellViewModel.ImageViewModel(imgs: [
-        DynamicCellViewModel.ImageViewModel.ImageItem(url: "https://img0.baidu.com/it/u=1910540168,2901566440&fm=253&fmt=auto&app=138&f=JPEG?w=499&h=332", type: .Image),
-        DynamicCellViewModel.ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),DynamicCellViewModel.ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),DynamicCellViewModel.ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),DynamicCellViewModel.ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),DynamicCellViewModel.ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),DynamicCellViewModel.ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),DynamicCellViewModel.ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),DynamicCellViewModel.ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),DynamicCellViewModel.ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image),DynamicCellViewModel.ImageViewModel.ImageItem(url:  "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg", type: .Image)])).padding(.horizontal, 15)
+        DynamicCellViewModel.ImageItem(url: "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg",
+                                       type: .image),
+        DynamicCellViewModel.ImageItem(url: "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg",
+                                       type: .image),
+        DynamicCellViewModel.ImageItem(url: "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg",
+                                       type: .image),
+        DynamicCellViewModel.ImageItem(url: "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg",
+                                       type: .image),
+        DynamicCellViewModel.ImageItem(url: "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg",
+                                       type: .image),
+        DynamicCellViewModel.ImageItem(url: "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg",
+                                       type: .image),
+        DynamicCellViewModel.ImageItem(url: "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg",
+                                       type: .image),
+        DynamicCellViewModel.ImageItem(url: "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg",
+                                       type: .image),
+        DynamicCellViewModel.ImageItem(url: "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg",
+                                       type: .image),
+        DynamicCellViewModel.ImageItem(url: "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg",
+                                       type: .image),
+        DynamicCellViewModel.ImageItem(url: "https://cdn.birdseye.photo/media/resized/large/004138-914-id3320.jpg",
+                                       type: .image)])).padding(.horizontal, 15)
 }

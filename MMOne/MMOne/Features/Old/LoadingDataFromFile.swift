@@ -15,7 +15,7 @@ enum Features {
         guard let url = Bundle.main.url(forResource: file, withExtension: nil) else {
             return nil
         }
-        
+
         do {
             let data = try Data(contentsOf: url)
             return data
@@ -25,5 +25,3 @@ enum Features {
         }
     }
 }
-
-

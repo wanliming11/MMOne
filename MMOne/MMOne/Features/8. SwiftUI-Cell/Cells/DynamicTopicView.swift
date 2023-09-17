@@ -27,6 +27,7 @@ struct DynamicTopicView: View {
 
 @available(iOS 17.0, *)
 #Preview {
-    DynamicTopicView(viewModel
-                     : DynamicCellViewModel.TopicViewModel(topics: [DynamicCellViewModel.TopicViewModel.Item(icon: "TopicThings", text: "日常碎片"), DynamicCellViewModel.TopicViewModel.Item(icon: "TopicChat", text: "高光时刻")]))
+    DynamicTopicView(viewModel: DynamicCellViewModel.TopicViewModel(topics:
+                [DynamicCellViewModel.Item(icon: "TopicThings", text: "日常碎片"),
+                DynamicCellViewModel.Item(icon: "TopicChat", text: "高光时刻")]))
 }

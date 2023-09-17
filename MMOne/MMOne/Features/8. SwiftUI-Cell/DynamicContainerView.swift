@@ -19,7 +19,7 @@ struct DynamicContainerView: View {
 
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: gridLayout(), alignment: .leading, spacing: 30)  {
+            LazyVGrid(columns: gridLayout(), alignment: .leading, spacing: 30) {
                 ForEach(0 ..< 9, id: \.self) { _ in
                     ExtractedView(model: model)
                 }

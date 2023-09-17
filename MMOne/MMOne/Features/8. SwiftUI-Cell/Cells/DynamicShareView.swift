@@ -27,5 +27,8 @@ struct DynamicShareView: View {
 
 @available(iOS 17.0, *)
 #Preview {
-    DynamicShareView(viewModel:  DynamicCellViewModel.ShareViewModel (items: [DynamicCellViewModel.ShareViewModel.Item(icon: "ShareStand", text: "表态"), DynamicCellViewModel.ShareViewModel.Item(icon: "SharePraise", text: "122"), DynamicCellViewModel.ShareViewModel.Item(icon: "ShareComment", text: "86")]))
+    let item1 = DynamicCellViewModel.Item(icon: "ShareStand", text: "表态")
+    let item2 = DynamicCellViewModel.Item(icon: "SharePraise", text: "122")
+    let item3 = DynamicCellViewModel.Item(icon: "ShareComment", text: "86")
+    return DynamicShareView(viewModel: DynamicCellViewModel.ShareViewModel (items: [item1, item2, item3 ]))
 }

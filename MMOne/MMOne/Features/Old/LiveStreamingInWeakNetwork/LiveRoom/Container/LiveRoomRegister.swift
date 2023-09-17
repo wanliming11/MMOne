@@ -14,85 +14,82 @@ internal struct NotifServiceKey {
     internal let serviceType: Any.Type
 }
 
-
 extension NotifServiceKey: Hashable {
     static func == (lhs: NotifServiceKey, rhs: NotifServiceKey) -> Bool {
         return lhs.serviceType == rhs.serviceType
     }
-    
+
     public func hash(into hasher: inout Hasher) {
         ObjectIdentifier(serviceType).hash(into: &hasher)
     }
 }
 
-
 internal class LiveRoomRegister {
     static let shared = LiveRoomRegister()
-    
-    let _container = Container()
-    var _notifObjs: [NotifServiceKey: [Any]] = [:]
-    
-    
+
+    let container = Container()
+    var notifObjs: [NotifServiceKey: [Any]] = [:]
+
     init() {
         self.register()
     }
-    
+
     /// 注册依赖对象
     /// 注意这里的实现依然没有解耦业务和底层，所以这里的代码还是需要动态生成，根据依赖配置表。
     private func register() {
         /// 注册基础对象
-        _container.register(LiveRoomUIServiceProtocol.self) { _ in
+        container.register(LiveRoomUIServiceProtocol.self) { _ in
             return LiveRoomBaseUIBoxController.shared
         }.inObjectScope(.container)
-        
-        _container.register(LiveRoomDanmuBoxServiceProtocol.self) { r in
-            let uiService = r.resolve(LiveRoomUIServiceProtocol.self)!
+
+        container.register(LiveRoomDanmuBoxServiceProtocol.self) { resolve in
+            let uiService = resolve.resolve(LiveRoomUIServiceProtocol.self)!
             return LiveRoomDanmuBoxController(uiService: uiService)
         }.inObjectScope(.container)
-        
-        _container.register(LiveRoomInputBoxServiceProtocol.self) { r in
-            let uiService = r.resolve(LiveRoomUIServiceProtocol.self)!
+
+        container.register(LiveRoomInputBoxServiceProtocol.self) { resolve in
+            let uiService = resolve.resolve(LiveRoomUIServiceProtocol.self)!
             return LiveRoomInputBoxController(uiService: uiService)
         }.inObjectScope(.container)
     }
-    
-    
+
     // MARK: Public
     /// 获取依赖对象，用于接口直接调用
     /// - Parameter protocolType: 依赖协议
     /// - Returns: 依赖对象
-    
     public func getService<Service>(_ protocolType: Service.Type) -> Service? {
-        return _container.resolve(protocolType)
+        return container.resolve(protocolType)
     }
-    
-    
+
     /// 注册通知，用于监听对应的协议变化，这部分是需要被动监听对象的对象
     public func registerNotification<Service>(_ notificationType: Service.Type, _ obj: Service) {
         let notifKey = NotifServiceKey(serviceType: notificationType)
-        _notifObjs[notifKey, default: []].append(obj)
+        notifObjs[notifKey, default: []].append(obj)
     }
-    
+
     /// 推送通知
     public func getNotifiObservers<Service>(_ protocolType: Service.Type) -> [Service]? {
         let notifKey = NotifServiceKey(serviceType: protocolType)
-        return _notifObjs[notifKey] as? [Service]
+        return notifObjs[notifKey] as? [Service]
     }
-    
-    
+
     // MARK: test
     static func testNotification() {
         /// 1. 注册通知
-        let danmuBox = LiveRoomRegister.shared._container.resolve(LiveRoomDanmuBoxServiceProtocol.self)
-        LiveRoomRegister.shared.registerNotification(LiveRoomDelegate.self, danmuBox as! LiveRoomDelegate)
-        let inputBox = LiveRoomRegister.shared._container.resolve(LiveRoomInputBoxServiceProtocol.self)
-        LiveRoomRegister.shared.registerNotification(LiveRoomDelegate.self, inputBox as! LiveRoomDelegate)
-        
+        let danmuBox = LiveRoomRegister.shared.container.resolve(LiveRoomDanmuBoxServiceProtocol.self)
+        if let danmuBox = danmuBox as? LiveRoomDelegate {
+            LiveRoomRegister.shared.registerNotification(LiveRoomDelegate.self, danmuBox)
+        }
+        let inputBox = LiveRoomRegister.shared.container.resolve(LiveRoomInputBoxServiceProtocol.self)
+        if let inputBox = inputBox as? LiveRoomDelegate {
+            LiveRoomRegister.shared.registerNotification(LiveRoomDelegate.self, inputBox)
+        }
+
         /// 2. 发出生命周期分发事件
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             LiveRoomDelegatePublisher
                 .notifLiveRoomViewWillAppear()
         }
-        LiveRoomDelegatePublisher.notifLiveRoomDidRefresh(source: LiveRoomRefreshType.LiveRoomRefreshTypeChangeRoom)
+        LiveRoomDelegatePublisher.notifLiveRoomDidRefresh(source: LiveRoomRefreshType.liveRoomRefreshTypeChangeRoom)
     }
 }

@@ -17,7 +17,7 @@ struct LazyVarView: View {
         }
         Text("Hello, world!")
             .padding()
-            .onAppear() {
+            .onAppear {
                 print(#file)
                 print(#filePath)
                 jump(using: [Dog()])
@@ -40,8 +40,8 @@ class Dog: Pet {
 func jump(using pets: [Pet]) {
     switch pets {
     case let pets as [Dog]:
-        for c in pets {
-            c.jump()
+        for pet in pets {
+            pet.jump()
         }
     default:
         print("No jump")

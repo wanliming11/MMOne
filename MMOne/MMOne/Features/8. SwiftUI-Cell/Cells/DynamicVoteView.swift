@@ -24,7 +24,7 @@ struct DynamicVoteView: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
 
-                ForEach(viewModel.options, id:\.self) { model in
+                ForEach(viewModel.options, id: \.self) { model in
                     Button(model) {
 
                     }.frame(height: 36)
@@ -47,6 +47,8 @@ struct DynamicVoteView: View {
 
 @available(iOS 17.0, *)
 #Preview {
-    DynamicVoteView(viewModel: DynamicCellViewModel.VoteViewModel(title: "今天中午吃什么?", options: ["螺蛳粉", "火锅", "麻辣烫","酸辣粉","烤肉","炒菜"], num: 27))
+    DynamicVoteView(viewModel: DynamicCellViewModel.VoteViewModel(title: "今天中午吃什么?",
+                                                                  options: ["螺蛳粉", "火锅", "麻辣烫", "酸辣粉", "烤肉", "炒菜"],
+                                                                  num: 27))
         .padding(.horizontal, 15).frame(width: 360)
 }

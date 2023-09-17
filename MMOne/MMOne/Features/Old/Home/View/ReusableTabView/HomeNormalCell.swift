@@ -11,7 +11,7 @@ import Kingfisher
 struct HomeNormalCell: View {
     let title: String
     let imageUrl: String
-    
+
     var body: some View {
         VStack {
             KFImage(URL(string: imageUrl))
@@ -24,6 +24,7 @@ struct HomeNormalCell: View {
 
 struct HomeNormalCell_Previews: PreviewProvider {
     static var previews: some View {
-        HomeNormalCell(title: "111", imageUrl: "https://n.sinaimg.cn/sinakd20220729ac/320/w2048h3072/20220729/6733-35cc7d325743fbacb0bf56eeedd16c67.jpg")
+        HomeNormalCell(title: "111",
+                       imageUrl: "https://www.2008php.com/2012_Website_appreciate/2012-03-25/20120325110634.jpg")
     }
 }

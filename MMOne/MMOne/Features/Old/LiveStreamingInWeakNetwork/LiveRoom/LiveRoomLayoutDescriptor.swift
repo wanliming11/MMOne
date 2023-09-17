@@ -14,14 +14,11 @@ import Foundation
 /// 理由间隙的目的是为了让扩展成为可能
 enum LiveRoomLayoutDescriptor: Int, CaseIterable {
     /// 最底部的播放器视图
-    case LiveRoomLayoutVideo = 0
+    case liveRoomLayoutVideo = 0
     /// 上面的 Tab 层，主要是 Tab 容器，弹幕等
-    case LiveRoomLayoutTab = 1
+    case liveRoomLayoutTab = 1
     /// 礼物层，除了活动的弹框以外，礼物的展示层级最高
-    case LiveRoomLayoutGift = 100
+    case liveRoomLayoutGift = 100
     /// 活动层，活动展示层，最高
-    case LiveRoomLayoutActivity = 999
+    case liveRoomLayoutActivity = 999
 }
-
-
-
