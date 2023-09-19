@@ -24,6 +24,9 @@
 		4E2C74A22A7896A3003F3E6F /* SwiftChains.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2C74A12A7896A3003F3E6F /* SwiftChains.swift */; };
 		4E3D48922A9397C00062E029 /* ReadAndWriteLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D48912A9397C00062E029 /* ReadAndWriteLock.swift */; };
 		4E3D48942A939B9A0062E029 /* AtomicPropertyLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E3D48932A939B9A0062E029 /* AtomicPropertyLock.swift */; };
+		4E42C1DF2AB97E42006089A3 /* MMHorizontalScrollContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E42C1DE2AB97E42006089A3 /* MMHorizontalScrollContainerView.swift */; };
+		4E42C1E12AB97E6D006089A3 /* MMHorizontalCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E42C1E02AB97E6D006089A3 /* MMHorizontalCellView.swift */; };
+		4E42C1E42AB9995E006089A3 /* MMTabsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E42C1E32AB9995E006089A3 /* MMTabsContainer.swift */; };
 		4E731B652AAF2B41005F7BA5 /* DynamicContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E731B642AAF2B41005F7BA5 /* DynamicContainerView.swift */; };
 		4E731B682AAF2BA6005F7BA5 /* DynamicNotifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E731B672AAF2BA6005F7BA5 /* DynamicNotifView.swift */; };
 		4E731B6A2AAF2BE4005F7BA5 /* DynamicHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E731B692AAF2BE4005F7BA5 /* DynamicHeaderView.swift */; };
@@ -123,6 +126,9 @@
 		4E2C74A12A7896A3003F3E6F /* SwiftChains.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChains.swift; sourceTree = "<group>"; };
 		4E3D48912A9397C00062E029 /* ReadAndWriteLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadAndWriteLock.swift; sourceTree = "<group>"; };
 		4E3D48932A939B9A0062E029 /* AtomicPropertyLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicPropertyLock.swift; sourceTree = "<group>"; };
+		4E42C1DE2AB97E42006089A3 /* MMHorizontalScrollContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMHorizontalScrollContainerView.swift; sourceTree = "<group>"; };
+		4E42C1E02AB97E6D006089A3 /* MMHorizontalCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMHorizontalCellView.swift; sourceTree = "<group>"; };
+		4E42C1E32AB9995E006089A3 /* MMTabsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMTabsContainer.swift; sourceTree = "<group>"; };
 		4E731B642AAF2B41005F7BA5 /* DynamicContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicContainerView.swift; sourceTree = "<group>"; };
 		4E731B672AAF2BA6005F7BA5 /* DynamicNotifView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicNotifView.swift; sourceTree = "<group>"; };
 		4E731B692AAF2BE4005F7BA5 /* DynamicHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeaderView.swift; sourceTree = "<group>"; };
@@ -306,6 +312,16 @@
 			path = "6. Write & Read Lock";
 			sourceTree = "<group>";
 		};
+		4E42C1DD2AB97E00006089A3 /* 9. SwiftUI - Container */ = {
+			isa = PBXGroup;
+			children = (
+				4E42C1DE2AB97E42006089A3 /* MMHorizontalScrollContainerView.swift */,
+				4E42C1E02AB97E6D006089A3 /* MMHorizontalCellView.swift */,
+				4E42C1E32AB9995E006089A3 /* MMTabsContainer.swift */,
+			);
+			path = "9. SwiftUI - Container";
+			sourceTree = "<group>";
+		};
 		4E731B632AAF2AF2005F7BA5 /* 8. SwiftUI-Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -372,6 +388,7 @@
 		4ECBF1F82A53AF0100DEA60A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				4E42C1DD2AB97E00006089A3 /* 9. SwiftUI - Container */,
 				4E731B632AAF2AF2005F7BA5 /* 8. SwiftUI-Cell */,
 				4EEED3852A962EF0003FB0FA /* 7. Dynamic VM update */,
 				4E3D48902A9397710062E029 /* 6. Write & Read Lock */,
@@ -730,14 +747,17 @@
 				4E731B7A2AAF3C2E005F7BA5 /* DynamicCellViewModel.swift in Sources */,
 				4ECBF2342A53B1AE00DEA60A /* LiveRoomDelegatePublisher.swift in Sources */,
 				4EAD443C2A54FCF600E3FEBA /* SpriteFigureView.swift in Sources */,
+				4E42C1E42AB9995E006089A3 /* MMTabsContainer.swift in Sources */,
 				4E731B6A2AAF2BE4005F7BA5 /* DynamicHeaderView.swift in Sources */,
 				4ECBF2052A53B1A300DEA60A /* RTMPPlayerView.swift in Sources */,
 				4ECBF23B2A53B1AE00DEA60A /* LiveRoomUIServiceProtocol.swift in Sources */,
+				4E42C1E12AB97E6D006089A3 /* MMHorizontalCellView.swift in Sources */,
 				4ECBF2462A53B1AE00DEA60A /* HomeTabView.swift in Sources */,
 				4E731B6E2AAF2C0C005F7BA5 /* DynamicImagesView.swift in Sources */,
 				4ECBF2492A53B1AE00DEA60A /* TimeWindow.swift in Sources */,
 				2309274829AB864300059B0C /* ContentView.swift in Sources */,
 				4E2C74A22A7896A3003F3E6F /* SwiftChains.swift in Sources */,
+				4E42C1DF2AB97E42006089A3 /* MMHorizontalScrollContainerView.swift in Sources */,
 				4ECBF1FC2A53B02900DEA60A /* Swift5_8_features.swift in Sources */,
 				4E1FDE8A2A9332D700EB9891 /* SwiftExtension.swift in Sources */,
 				4ECBF2392A53B1AE00DEA60A /* LiveRoomView.swift in Sources */,

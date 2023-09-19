@@ -12,17 +12,17 @@ struct ContentView: View {
     var obj = DynamicVM(["ext": "yuba"])
 
     var body: some View {
-        ScrollView {
-            VStack {
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("Hello, world!")
-                SpriteFigureView()
-                MVCUIView().frame(width: 100, height: 50)
-                LiveRainbowRoomView(roomViewModel: obj)
-                ItemListView(viewModel: listViewModel)
-                    .onAppear {
+//        ScrollView {
+//            VStack {
+//                Image(systemName: "globe")
+//                    .imageScale(.large)
+//                    .foregroundColor(.accentColor)
+//                Text("Hello, world!")
+//                SpriteFigureView()
+//                MVCUIView().frame(width: 100, height: 50)
+//                LiveRainbowRoomView(roomViewModel: obj)
+//                ItemListView(viewModel: listViewModel)
+//                    .onAppear {
                         // 1. test associatedtype
     //                    let person = Person()
     //                    person.printGroup()
@@ -63,12 +63,13 @@ struct ContentView: View {
     //                             RoomInfo(roomType: .LiveType, roomId: "1223", hashId: "", businessType: .HomeType),
     //                             RoomInfo(roomType: .VideoType, roomId: "22", hashId: "22", businessType: .HomeType)])
     //                    }
-                    }
-                DynamicContainerView()
-                TodoView(presenter: TodoPresenter())
-            }
-            .padding()
-        }
+//                    }
+//                DynamicContainerView()
+//                TodoView(presenter: TodoPresenter())
+//            }
+//            .padding()
+//        }
+        MMTabsContainer1()
     }
 }
 
