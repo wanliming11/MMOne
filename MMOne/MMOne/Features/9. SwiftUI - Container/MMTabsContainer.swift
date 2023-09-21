@@ -32,16 +32,6 @@ struct MMTabsContainer1: View {
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-//            .gesture(
-//                DragGesture()
-//                    .onEnded { value in
-//                        if value.translation.width < 0 {
-//                            self.selectedSegment = min(self.selectedSegment + 1, self.segments.count - 1)
-//                        } else if value.translation.width > 0 {
-//                            self.selectedSegment = max(self.selectedSegment - 1, 0)
-//                        }
-//                    }
-//            )
         }
     }
 }
@@ -49,6 +39,7 @@ struct MMTabsContainer1: View {
 struct MMTabsContainer: View {
     var body: some View {
         TabView {
+            #if DEBUG
             VStack {
                 MMHorizontalScrollContainerView()
                 DynamicContainerView()
@@ -56,11 +47,14 @@ struct MMTabsContainer: View {
                 Image(systemName: "message.fill")
                 Text("关注")
             }
+
             Text("鱼吧")
                 .tabItem {
                     Image(systemName: "message.fill")
                     Text("鱼吧")
                 }
+            #else
+            #endif
         }
     }
 }
