@@ -14,6 +14,8 @@
 		2309275729AB864500059B0C /* BaseDesignPatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309275629AB864500059B0C /* BaseDesignPatternTests.swift */; };
 		2309276129AB864500059B0C /* BaseDesignPatternUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309276029AB864500059B0C /* BaseDesignPatternUITests.swift */; };
 		2309276329AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2309276229AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift */; };
+		4E1760AB2B1F2038000AF3B0 /* BlockIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1760AA2B1F2038000AF3B0 /* BlockIn.m */; };
+		4E1760AD2B1F2045000AF3B0 /* Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1760AC2B1F2045000AF3B0 /* Closure.swift */; };
 		4E1FDE8A2A9332D700EB9891 /* SwiftExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1FDE892A9332D600EB9891 /* SwiftExtension.swift */; };
 		4E1FDE8F2A93342B00EB9891 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1FDE8E2A93342B00EB9891 /* Person.m */; };
 		4E1FDE922A93370400EB9891 /* Person+Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1FDE912A93370400EB9891 /* Person+Group.m */; };
@@ -42,6 +44,7 @@
 		4EAD44392A54F9BA00E3FEBA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4EAD44382A54F9BA00E3FEBA /* README.md */; };
 		4EAD443C2A54FCF600E3FEBA /* SpriteFigureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAD443B2A54FCF600E3FEBA /* SpriteFigureView.swift */; };
 		4EAD443E2A54FD0D00E3FEBA /* SpriteFigureParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAD443D2A54FD0D00E3FEBA /* SpriteFigureParser.swift */; };
+		4EC523DB2B8C73200011F3DF /* 1. NSNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC523DA2B8C73200011F3DF /* 1. NSNotification.swift */; };
 		4ECB0D892A54473900DEA60A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4ECB0D882A54473900DEA60A /* Kingfisher */; };
 		4ECB0D8C2A54485E00DEA60A /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 4ECB0D8B2A54485E00DEA60A /* SwiftUIX */; };
 		4ECB0D8F2A54491F00DEA60A /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 4ECB0D8E2A54491F00DEA60A /* Swinject */; };
@@ -112,6 +115,9 @@
 		2309275C29AB864500059B0C /* MMOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2309276029AB864500059B0C /* BaseDesignPatternUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDesignPatternUITests.swift; sourceTree = "<group>"; };
 		2309276229AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDesignPatternUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4E1760A92B1F2038000AF3B0 /* BlockIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockIn.h; sourceTree = "<group>"; };
+		4E1760AA2B1F2038000AF3B0 /* BlockIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockIn.m; sourceTree = "<group>"; };
+		4E1760AC2B1F2045000AF3B0 /* Closure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closure.swift; sourceTree = "<group>"; };
 		4E1FDE892A9332D600EB9891 /* SwiftExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExtension.swift; sourceTree = "<group>"; };
 		4E1FDE8B2A9333F800EB9891 /* MMOne-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMOne-Bridging-Header.h"; sourceTree = "<group>"; };
 		4E1FDE8C2A9333F900EB9891 /* NSObject+Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Person.h"; sourceTree = "<group>"; };
@@ -144,6 +150,7 @@
 		4EAD44382A54F9BA00E3FEBA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4EAD443B2A54FCF600E3FEBA /* SpriteFigureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteFigureView.swift; sourceTree = "<group>"; };
 		4EAD443D2A54FD0D00E3FEBA /* SpriteFigureParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteFigureParser.swift; sourceTree = "<group>"; };
+		4EC523DA2B8C73200011F3DF /* 1. NSNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "1. NSNotification.swift"; sourceTree = "<group>"; };
 		4ECBF1FB2A53B02900DEA60A /* Swift5_8_features.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift5_8_features.swift; sourceTree = "<group>"; };
 		4ECBF1FF2A53B1A300DEA60A /* MultiColumns.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiColumns.swift; sourceTree = "<group>"; };
 		4ECBF2012A53B1A300DEA60A /* HLSPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLSPlayerView.swift; sourceTree = "<group>"; };
@@ -236,6 +243,7 @@
 		2309274429AB864300059B0C /* MMOne */ = {
 			isa = PBXGroup;
 			children = (
+				4EC523D92B8C73030011F3DF /* TikeT */,
 				4ECBF1F82A53AF0100DEA60A /* Features */,
 				4ECBF1F72A53AEFA00DEA60A /* Tick */,
 				2309274529AB864300059B0C /* MMOneApp.swift */,
@@ -270,6 +278,16 @@
 				2309276229AB864500059B0C /* BaseDesignPatternUITestsLaunchTests.swift */,
 			);
 			path = BaseDesignPatternUITests;
+			sourceTree = "<group>";
+		};
+		4E1760A82B1F1FF1000AF3B0 /* 10. Closure & Block */ = {
+			isa = PBXGroup;
+			children = (
+				4E1760A92B1F2038000AF3B0 /* BlockIn.h */,
+				4E1760AA2B1F2038000AF3B0 /* BlockIn.m */,
+				4E1760AC2B1F2045000AF3B0 /* Closure.swift */,
+			);
+			path = "10. Closure & Block";
 			sourceTree = "<group>";
 		};
 		4E1FC2C82A9305DB00EB9891 /* 5. category&extension */ = {
@@ -374,6 +392,14 @@
 			path = "1. How to show a sprite figure?";
 			sourceTree = "<group>";
 		};
+		4EC523D92B8C73030011F3DF /* TikeT */ = {
+			isa = PBXGroup;
+			children = (
+				4EC523DA2B8C73200011F3DF /* 1. NSNotification.swift */,
+			);
+			path = TikeT;
+			sourceTree = "<group>";
+		};
 		4ECBF1F72A53AEFA00DEA60A /* Tick */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +414,7 @@
 		4ECBF1F82A53AF0100DEA60A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				4E1760A82B1F1FF1000AF3B0 /* 10. Closure & Block */,
 				4E42C1DD2AB97E00006089A3 /* 9. SwiftUI - Container */,
 				4E731B632AAF2AF2005F7BA5 /* 8. SwiftUI-Cell */,
 				4EEED3852A962EF0003FB0FA /* 7. Dynamic VM update */,
@@ -743,6 +770,7 @@
 				4ECBF23F2A53B1AE00DEA60A /* HomeAppDelegate.swift in Sources */,
 				4E1FDE8F2A93342B00EB9891 /* Person.m in Sources */,
 				4ECBF2332A53B1AE00DEA60A /* LiveRoomDanmuBoxServiceProtocol.swift in Sources */,
+				4E1760AD2B1F2045000AF3B0 /* Closure.swift in Sources */,
 				4ECBF2302A53B1AE00DEA60A /* LiveRoomInputBoxServiceProtocol.swift in Sources */,
 				4E731B7A2AAF3C2E005F7BA5 /* DynamicCellViewModel.swift in Sources */,
 				4ECBF2342A53B1AE00DEA60A /* LiveRoomDelegatePublisher.swift in Sources */,
@@ -762,9 +790,11 @@
 				4E1FDE8A2A9332D700EB9891 /* SwiftExtension.swift in Sources */,
 				4ECBF2392A53B1AE00DEA60A /* LiveRoomView.swift in Sources */,
 				4E731B652AAF2B41005F7BA5 /* DynamicContainerView.swift in Sources */,
+				4EC523DB2B8C73200011F3DF /* 1. NSNotification.swift in Sources */,
 				2309274629AB864300059B0C /* MMOneApp.swift in Sources */,
 				4ECBF2382A53B1AE00DEA60A /* LiveRoomLayoutDescriptor.swift in Sources */,
 				E8298899BC2F85EE75307F1D /* Base.swift in Sources */,
+				4E1760AB2B1F2038000AF3B0 /* BlockIn.m in Sources */,
 				4ECBF2312A53B1AE00DEA60A /* LiveRoomInputBoxController.swift in Sources */,
 				4E731B742AAF2C4F005F7BA5 /* DynamicTopicView.swift in Sources */,
 				4ECBF2442A53B1AE00DEA60A /* HomeBannerCell.swift in Sources */,

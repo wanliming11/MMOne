@@ -58,6 +58,9 @@ MMOne is a project. This project wants to solve some small and complex problems,
     - 演示一个横向滚动的容器，包含：懒加载，cell 里面的多个状态。
     - 多个可横向滑动的 Tabs
 
+## Prepare for TT
+- [] Design a notification
+
     
 
 

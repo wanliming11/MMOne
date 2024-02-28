@@ -14,7 +14,7 @@ struct MMTabsContainer1: View {
     var body: some View {
         VStack {
             Picker("", selection: $selectedSegment) {
-                ForEach(0 ..< segments.count) { index in
+                ForEach(0 ..< segments.count, id: \.self) { index in
                     Text(self.segments[index])
                 }
             }

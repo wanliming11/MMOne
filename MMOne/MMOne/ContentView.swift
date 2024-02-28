@@ -69,7 +69,9 @@ struct ContentView: View {
 //            }
 //            .padding()
 //        }
-        MMTabsContainer1()
+        MMTabsContainer1().onAppear(){
+            TestNotification().test()
+        }
     }
 }
 
